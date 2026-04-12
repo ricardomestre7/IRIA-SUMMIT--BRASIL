@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Document | AIvent - AI Event, Conference and Meetup Website Template
+    </title>
+    <!-- Site favicon -->
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.0/dist/cdn.min.js"
+    ></script>
+  </head>
+
+  <body x-data="{ isMenuOpen: false }">
+    <div
+      class="fixed left-0 inset-y-0 lg:flex flex-col bg-white text-slate-700 border-slate-200 w-full max-w-[18rem] p-4 shadow-lg shadow-slate-100 border-r z-[51]"
+      :class="isMenuOpen ? 'flex' : 'hidden'"
+    >
+      <div class="p-4 mb-2">
+        <a href="#!"
+          ><img src="images/logo.webp" alt="" class="h-8 mx-auto"
+        /></a>
+      </div>
+      <nav
+        class="flex flex-col gap-1 min-w-[240px] p-2 font-sans text-base font-normal text-gray-700"
+      >
+        <a
+          href="index.html"
+          tabindex="0"
+          class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-sky-50 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 [&.active]:bg-sky-50 [&.active]:text-sky-500 outline-none"
+        >
+          <div class="grid mr-4 place-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+              />
+            </svg>
+          </div>
+          Introduction
+        </a>
+        <a
+          href="installation.html"
+          tabindex="0"
+          class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-sky-50 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 [&.active]:bg-sky-50 [&.active]:text-sky-500 outline-none"
+        >
+          <div class="grid mr-4 place-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m7.875 14.25 1.214 1.942a2.25 2.25 0 0 0 1.908 1.058h2.006c.776 0 1.497-.4 1.908-1.058l1.214-1.942M2.41 9h4.636a2.25 2.25 0 0 1 1.872 1.002l.164.246a2.25 2.25 0 0 0 1.872 1.002h2.092a2.25 2.25 0 0 0 1.872-1.002l.164-.246A2.25 2.25 0 0 1 16.954 9h4.636M2.41 9a2.25 2.25 0 0 0-.16.832V12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 12V9.832c0-.287-.055-.57-.16-.832M2.41 9a2.25 2.25 0 0 1 .382-.632l3.285-3.832a2.25 2.25 0 0 1 1.708-.786h8.43c.657 0 1.281.287 1.709.786l3.284 3.832c.163.19.291.404.382.632M4.5 20.25h15A2.25 2.25 0 0 0 21.75 18v-2.625c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125V18a2.25 2.25 0 0 0 2.25 2.25Z"
+              />
+            </svg>
+          </div>
+          Installation
+        </a>
+        <a
+          href="structure.html"
+          tabindex="0"
+          class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-sky-50 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 [&.active]:bg-sky-50 [&.active]:text-sky-500 outline-none"
+        >
+          <div class="grid mr-4 place-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="size-5"
+            >
+              <rect width="18" height="7" x="3" y="3" rx="1" />
+              <rect width="7" height="7" x="3" y="14" rx="1" />
+              <rect width="7" height="7" x="14" y="14" rx="1" />
+            </svg>
+          </div>
+          Structure
+        </a>
+        <a
+          href="layouts.html"
+          tabindex="0"
+          class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-sky-50 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 [&.active]:bg-sky-50 [&.active]:text-sky-500 outline-none"
+        >
+          <div class="grid mr-4 place-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="size-5"
+            >
+              <rect width="18" height="18" x="3" y="3" rx="2" />
+              <path d="M3 9h18" />
+              <path d="M9 21V9" />
+            </svg>
+          </div>
+          Layout
+          <div class="grid ml-auto place-items-center justify-self-end">
+            <div
+              class="relative grid items-center font-sans font-bold whitespace-nowrap select-none bg-red-500 text-red-50 py-0.5 px-2 text-xs rounded-full"
+            >
+              <span>Hot</span>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="css-javascript.html"
+          tabindex="0"
+          class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-sky-50 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 [&.active]:bg-sky-50 [&.active]:text-sky-500 outline-none"
+        >
+          <div class="grid mr-4 place-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="size-5"
+            >
+              <path
+                d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"
+              />
+            </svg>
+          </div>
+          css & Javascript
+        </a>
+        <a
+          href="credit.html"
+          tabindex="0"
+          class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-sky-50 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 [&.active]:bg-sky-50 [&.active]:text-sky-500 outline-none active"
+        >
+          <div class="grid mr-4 place-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="size-5"
+            >
+              <circle cx="12" cy="12" r="2" />
+              <path d="M12 2v4" />
+              <path d="m6.8 15-3.5 2" />
+              <path d="m20.7 7-3.5 2" />
+              <path d="M6.8 9 3.3 7" />
+              <path d="m20.7 17-3.5-2" />
+              <path d="m9 22 3-8 3 8" />
+              <path d="M8 22h8" />
+              <path d="M18 18.7a9 9 0 1 0-12 0" />
+            </svg>
+          </div>
+          Credit & Resources
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          tabindex="0"
+          class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-sky-50 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 [&.active]:bg-sky-50 [&.active]:text-sky-500 outline-none"
+        >
+          <div class="grid mr-4 place-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="size-5"
+            >
+              <path
+                d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"
+              />
+              <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+            </svg>
+          </div>
+          Support
+        </a>
+        <a
+          href="changelog.html"
+          tabindex="0"
+          class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-sky-50 hover:text-sky-500 focus:text-sky-500 active:text-sky-500 [&.active]:bg-sky-50 [&.active]:text-sky-500 outline-none"
+        >
+          <div class="grid mr-4 place-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+              />
+            </svg>
+          </div>
+          ChangeLog
+        </a>
+      </nav>
+    </div>
+
+    <header
+      class="h-20 fixed flex items-center px-5 top-0 left-0 lg:left-[18rem] right-0 bg-white border-b border-slate-200 shadow-lg shadow-slate-100 bg-white/40 backdrop-blur-md z-50"
+    >
+      <div class="container flex items-center gap-5 px-2 mx-auto">
+        <button
+          type="button"
+          class="inline-flex items-center justify-center transition-all border rounded-md size-10 lg:hidden border-slate-200 text-slate-500 hover:text-sky-500"
+          @click="isMenuOpen = true"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+            />
+          </svg>
+        </button>
+        <h6 class="font-semibold text-[18px] grow">Symfony Docs - v1.0.0</h6>
+        <div class="flex items-center gap-2 shrink-0">
+          <a
+            href="#"
+            target="_blank"
+            class="relative px-5 py-2 overflow-hidden text-white transition-all duration-300 ease-out bg-red-500 rounded group hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 hover:ring-2 hover:ring-offset-2 hover:ring-red-400"
+          >
+            <span
+              class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"
+            ></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-4 mb-0.5 inline-block mr-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              />
+            </svg>
+            <span class="relative">Buy Now</span>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            class="relative px-5 py-2 overflow-hidden text-white transition-all duration-300 ease-out bg-green-500 rounded group hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 hover:ring-2 hover:ring-offset-2 hover:ring-green-400"
+          >
+            <span
+              class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"
+            ></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="inline-block mr-1 align-middle size-4"
+            >
+              <path
+                d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"
+              />
+              <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+            </svg>
+            <span class="relative">Support</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="lg:ml-[18rem] relative min-h-screen pb-20">
+      <div class="container 2xl:max-w-[1200px] pt-28 mx-auto px-8">
+        <div class="flex mb-6">
+          <h5 class="text-xl font-semibold">Credit & Resources</h5>
+        </div>
+
+        <p class="mb-3 text-slate-500">We have used the following libraries, and built-in browser features.</p>
+
+       <ul class="list-inside list-[circle] space-y-2 mb-5">
+         <li><span class="font-medium">Ui Faces:</span> Aggregates publicly available avatar images that you can use in your design mockups and prototypes.</li>           
+         <li><span class="font-medium">Lightweight Font Icons:</span> Scalable, fast-loading icon sets delivered as fonts, designed to reduce page load time while maintaining crisp visuals.</li>
+         <li><span class="font-medium">Swiper Slider:</span> A modern, touch-enabled slider library for creating responsive carousels and sliders.</li>
+         <li><span class="font-medium">Smooth Scrolling:</span> Provides a seamless and fluid scrolling experience when navigating through a webpage.</li>
+         <li><span class="font-medium">CSS3 Animation:</span> Enables visually appealing effects and transitions using CSS3 properties without JavaScript.</li>
+</ul>
+      </div>
+      <footer
+        class="absolute inset-x-0 bottom-0 py-6 text-center text-slate-500"
+      >
+        <div class="container 2xl:w-[1200px] mx-auto px-2">
+          <p>
+            &copy;
+            <script>
+              var year = new Date();
+              document.write(year.getFullYear());
+            </script>
+            Aivent Crafted by
+            <a href="https://1.envato.market/srbthemes" target="_blank" class="font-semibold">SRBThemes</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

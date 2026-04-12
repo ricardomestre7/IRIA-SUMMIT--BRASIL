@@ -1,0 +1,82 @@
+{# Lista de contactos oficiais — integra com o tema escuro existente #}
+{% set iria_emails = [
+    'admin@iriasummitportugal.com',
+    'ricardorp@iriasummitportugal.com',
+    'susanapfcruz@iriasummitportugal.com',
+    'expositor.ovar@iriasummitportugal.com',
+    'expositor.stamariadafeira@iriasummitportugal.com',
+    'expositor.aveiro@iriasummitportugal.com',
+    'parcerias@iriasummitportugal.com',
+    'comunicacao@iriasummitportugal.com'
+] %}
+
+<div class="col-12 col-lg-10 col-xl-8 mx-auto mt-5 pt-3">
+    <div class="text-center mb-4">
+        <div class="subtitle wow fadeInUp">Contactos</div>
+        <h3 class="wow fadeInUp mb-0">Endereços oficiais @iriasummitportugal.com</h3>
+    </div>
+    <div class="rounded-1 border-white-op-2 overflow-hidden bg-dark-2 wow fadeInUp" data-wow-delay=".1s">
+        {% for email in iria_emails %}
+        <div class="d-flex align-items-center justify-content-between gap-3 py-3 px-4{% if not loop.last %} border-white-bottom-op-2{% endif %}">
+            <a href="mailto:{{ email }}" class="text-light fw-bold mb-0 text-break">{{ email }}</a>
+            <button type="button" class="btn btn-link text-light p-2 flex-shrink-0 op-8 js-copy-email" data-email="{{ email }}" title="Copiar endereço" aria-label="Copiar {{ email }}">
+                <i class="fa fa-copy fs-18" aria-hidden="true"></i>
+            </button>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+(function () {
+    function initCopyEmail() {
+        document.querySelectorAll('.js-copy-email').forEach(function (btn) {
+            if (btn.dataset.copyBound === '1') return;
+            btn.dataset.copyBound = '1';
+            btn.addEventListener('click', function () {
+                var text = btn.getAttribute('data-email') || '';
+                function done() {
+                    var icon = btn.querySelector('i');
+                    if (icon) { icon.className = 'fa fa-check fs-18'; }
+                    btn.classList.add('id-color');
+                    setTimeout(function () {
+                        btn.classList.remove('id-color');
+                        if (icon) { icon.className = 'fa fa-copy fs-18'; }
+                    }, 1200);
+                }
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(text).then(done).catch(function () {
+                        try {
+                            var ta = document.createElement('textarea');
+                            ta.value = text;
+                            ta.setAttribute('readonly', '');
+                            ta.style.position = 'absolute';
+                            ta.style.left = '-9999px';
+                            document.body.appendChild(ta);
+                            ta.select();
+                            document.execCommand('copy');
+                            document.body.removeChild(ta);
+                            done();
+                        } catch (e) {}
+                    });
+                } else {
+                    try {
+                        var ta = document.createElement('textarea');
+                        ta.value = text;
+                        document.body.appendChild(ta);
+                        ta.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(ta);
+                        done();
+                    } catch (e) {}
+                }
+            });
+        });
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCopyEmail);
+    } else {
+        initCopyEmail();
+    }
+})();
+</script>

@@ -1,0 +1,19 @@
+# Symfony — aplicação em Landing/
+Landing/var/
+Landing/vendor/
+Landing/public/bundles/
+Landing/.env.local
+Landing/.env.local.php
+Landing/.env.*.local
+Landing/config/secrets/*/prod.decrypt.private.php
+
+# Ferramentas / SO
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
