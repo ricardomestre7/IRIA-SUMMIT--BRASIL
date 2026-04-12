@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AIvent - AI Event, Conference and Meetup Website Template</title>
+    <link rel="icon" href="assets/images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="AIvent" name="description" >
+    <meta content="" name="keywords" >
+    <meta content="" name="author" >
+
+    {% include 'partials/head-css.html.twig' %}
+
+    {% include 'partials/body.html.twig' %}
+    {% include 'partials/preloader.html.twig' %}
+    {% include 'partials/header.html.twig' %}
+
+     {% block page_contents %}
+<!-- Default content, replace or extend as needed -->
+        <p>Success</p>
+    {% endblock %}
+
+<!-- footer -->
+    {% include 'partials/footer.html.twig' %}
+
+<!-- javascripts -->
+
+    {% block javascripts %}
+    {% include 'partials/vendor-scripts.html.twig' %}
+    {% block vendor_scripts %}{% endblock %}
+    {% block page_scripts %}{% endblock %}
+    {% endblock %}
