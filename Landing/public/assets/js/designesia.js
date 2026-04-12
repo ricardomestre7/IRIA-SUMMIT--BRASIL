@@ -1199,14 +1199,19 @@
 
     function de_tabs(){
         $('.de-tab').each(function() {
-            var activeIndex = $(this).find('.active-tab').index(),
-                 $contentlis = $(this).find('.d-tab-content > li'),
-                 $tabslis = $(this).find('.d-tab-nav > li');
+            var $root = $(this),
+                 $tabslis = $root.children('.d-tab-nav').children('li'),
+                 $contentlis = $root.children('.d-tab-content').children('li'),
+                 activeIndex = $tabslis.filter('.active-tab').index();
+            if (activeIndex < 0) {
+                activeIndex = 0;
+                $tabslis.first().addClass('active-tab');
+            }
              
              // Show content of active tab on loads
              $contentlis.eq(activeIndex).show();
 
-             $(this).find('.d-tab-nav').on('click', 'li', function (e) {
+             $root.children('.d-tab-nav').on('click', 'li', function (e) {
                var $current = $(e.currentTarget),
                    index = $current.index();
                

@@ -1,0 +1,7 @@
+{% macro sess(titulo, texto, nota = 'Oradores: a confirmar') %}
+<div class="border-white-bottom-op-2 pb-4 mb-4">
+    <h4 class="fs-18 mb-2">{{ titulo }}</h4>
+    <p class="fs-15 mb-2 op-9 mb-0">{{ texto }}</p>
+    <span class="fs-14 op-5 d-block mt-2">{{ nota }}</span>
+</div>
+{% endmacro %}
