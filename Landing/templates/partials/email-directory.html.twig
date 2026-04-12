@@ -1,82 +1,45 @@
-{# Lista de contactos oficiais — integra com o tema escuro existente #}
-{% set iria_emails = [
-    'admin@iriasummitportugal.com',
-    'ricardorp@iriasummitportugal.com',
-    'susanapfcruz@iriasummitportugal.com',
-    'expositor.ovar@iriasummitportugal.com',
-    'expositor.stamariadafeira@iriasummitportugal.com',
-    'expositor.aveiro@iriasummitportugal.com',
-    'parcerias@iriasummitportugal.com',
-    'comunicacao@iriasummitportugal.com'
+{% set contact_lines = [
+    {
+        'tag': 'Coordenação institucional',
+        'title': 'Direção e gestão executiva',
+        'desc': 'Contactos oficiais para coordenação geral, direção de projeto e acompanhamento institucional.',
+        'emails': ['admin@iriasummitportugal.com', 'ricardorp@iriasummitportugal.com', 'susanapfcruz@iriasummitportugal.com']
+    },
+    {
+        'tag': 'Exposição e startups',
+        'title': 'Expositores por cidade anfitriã',
+        'desc': 'Canal dedicado para candidaturas de exposição, mostras regionais e participação de projetos por fase.',
+        'emails': ['expositor.ovar@iriasummitportugal.com', 'expositor.stamariadafeira@iriasummitportugal.com', 'expositor.aveiro@iriasummitportugal.com']
+    },
+    {
+        'tag': 'Parcerias e media',
+        'title': 'Relações estratégicas e comunicação',
+        'desc': 'Atendimento para patrocínios, parcerias institucionais, imprensa e comunicação oficial do summit.',
+        'emails': ['parcerias@iriasummitportugal.com', 'comunicacao@iriasummitportugal.com']
+    }
 ] %}
 
-<div class="col-12 col-lg-10 col-xl-8 mx-auto">
-    <div class="text-center mb-4">
+<div class="col-12 col-xl-10 mx-auto">
+    <div class="text-center mb-5">
         <div class="subtitle wow fadeInUp">Contactos</div>
-        <h3 class="wow fadeInUp mb-0">Endereços oficiais @iriasummitportugal.com</h3>
+        <h3 class="wow fadeInUp mb-2">Endereços oficiais @iriasummitportugal.com</h3>
+        <p class="op-8 mb-0 wow fadeInUp">Estrutura de contacto organizada por hierarquia funcional, com foco em expositores, parcerias e comunicação institucional.</p>
     </div>
-    <div class="rounded-1 border-white-op-2 overflow-hidden bg-dark-2 wow fadeInUp" data-wow-delay=".1s">
-        {% for email in iria_emails %}
-        <div class="d-flex align-items-center justify-content-between gap-3 py-3 px-4{% if not loop.last %} border-white-bottom-op-2{% endif %}">
-            <a href="mailto:{{ email }}" class="text-light fw-bold mb-0 text-break">{{ email }}</a>
-            <button type="button" class="btn btn-link text-light p-2 flex-shrink-0 op-8 js-copy-email" data-email="{{ email }}" title="Copiar endereço" aria-label="Copiar {{ email }}">
-                <i class="fa fa-copy fs-18" aria-hidden="true"></i>
-            </button>
+
+    <div class="rounded-1 border-white-op-2 p-4 p-lg-5 bg-dark-2 wow fadeInUp" data-wow-delay=".1s">
+        {% for line in contact_lines %}
+        <div class="{% if not loop.first %}pt-4 mt-4{% endif %}"{% if not loop.first %} style="border-top:1px dashed rgba(255,255,255,.25);" {% endif %}>
+            <div class="text-center text-lg-start mb-3">
+                <span class="subtitle s2 d-inline-block mb-2">{{ line.tag }}</span>
+                <h4 class="mb-2">{{ line.title }}</h4>
+                <p class="op-8 mb-0">{{ line.desc }}</p>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                {% for email in line.emails %}
+                <a href="mailto:{{ email }}" class="px-3 py-2 rounded-1 border-white-op-2 text-light fw-bold">{{ email }}</a>
+                {% endfor %}
+            </div>
         </div>
         {% endfor %}
     </div>
 </div>
-
-<script>
-(function () {
-    function initCopyEmail() {
-        document.querySelectorAll('.js-copy-email').forEach(function (btn) {
-            if (btn.dataset.copyBound === '1') return;
-            btn.dataset.copyBound = '1';
-            btn.addEventListener('click', function () {
-                var text = btn.getAttribute('data-email') || '';
-                function done() {
-                    var icon = btn.querySelector('i');
-                    if (icon) { icon.className = 'fa fa-check fs-18'; }
-                    btn.classList.add('id-color');
-                    setTimeout(function () {
-                        btn.classList.remove('id-color');
-                        if (icon) { icon.className = 'fa fa-copy fs-18'; }
-                    }, 1200);
-                }
-                if (navigator.clipboard && navigator.clipboard.writeText) {
-                    navigator.clipboard.writeText(text).then(done).catch(function () {
-                        try {
-                            var ta = document.createElement('textarea');
-                            ta.value = text;
-                            ta.setAttribute('readonly', '');
-                            ta.style.position = 'absolute';
-                            ta.style.left = '-9999px';
-                            document.body.appendChild(ta);
-                            ta.select();
-                            document.execCommand('copy');
-                            document.body.removeChild(ta);
-                            done();
-                        } catch (e) {}
-                    });
-                } else {
-                    try {
-                        var ta = document.createElement('textarea');
-                        ta.value = text;
-                        document.body.appendChild(ta);
-                        ta.select();
-                        document.execCommand('copy');
-                        document.body.removeChild(ta);
-                        done();
-                    } catch (e) {}
-                }
-            });
-        });
-    }
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initCopyEmail);
-    } else {
-        initCopyEmail();
-    }
-})();
-</script>
