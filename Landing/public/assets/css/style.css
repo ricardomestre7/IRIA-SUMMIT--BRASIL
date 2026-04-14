@@ -13318,3 +13318,49 @@ footer .social-icons a:hover {
     font-size: 14px;
     top: 2px;
 }
+
+/* HUB CARD - UNIFIED VIEW */
+.ir-hub-card {
+    background: var(--bg-dark-2);
+    border-radius: var(--rounded-1);
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s ease;
+}
+
+.ir-hub-card:hover {
+    border-color: rgba(var(--primary-color-rgb), 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.ir-hub-card__header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ir-hub-card__body {
+    flex-grow: 1;
+}
+
+.ir-hub-card .d-ticket {
+    margin-bottom: 0px;
+    transform: scale(0.95);
+    transform-origin: center center;
+    border-radius: 8px;
+    background: #060814;
+}
+
+.ir-hub-card:hover .d-ticket {
+    transform: scale(1);
+}
+
+.ir-hub-card__footer .btn-main {
+    margin-top: 15px;
+}
+
+@media (max-width: 991px) {
+    .ir-hub-card { margin-bottom: 30px; }
+}
