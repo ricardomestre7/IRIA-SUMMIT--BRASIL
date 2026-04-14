@@ -67,9 +67,9 @@ O controlador principal está em [`Landing/src/Controller/DefaultController.php`
 
 Secções editoriais/modulares em [`Landing/templates/partials`](Landing/templates/partials):
 
-- `section-schedule-iria.html.twig` (programa por cidades/dias)
+- `section-phase-ovar-iria.html.twig`, `section-phase-feira-iria.html.twig`, `section-phase-aveiro-iria.html.twig` (programas oficiais)
+- `section-schedule-iria.html.twig` (resumos por cidade)
 - `section-tickets-iria.html.twig`
-- `section-host-cities-iria.html.twig`
 - `section-partners-iria.html.twig`
 - `section-institutional-iria.html.twig`
 - `section-faq-iria.html.twig`
