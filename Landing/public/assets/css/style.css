@@ -11964,6 +11964,20 @@ img {
   aspect-ratio: 4 / 3;
   background: rgba(0, 0, 0, .25);
 }
+.ir-phase-grid-card__stripe{
+  height: 4px;
+  width: 100%;
+  flex-shrink: 0;
+}
+.ir-phase-grid-card--f01 .ir-phase-grid-card__stripe{
+  background: linear-gradient(90deg, rgba(var(--primary-color-rgb), 1), rgba(var(--secondary-color-rgb), .65));
+}
+.ir-phase-grid-card--f02 .ir-phase-grid-card__stripe{
+  background: linear-gradient(90deg, rgba(var(--secondary-color-rgb), 1), rgba(var(--primary-color-rgb), .55));
+}
+.ir-phase-grid-card--f03 .ir-phase-grid-card__stripe{
+  background: linear-gradient(90deg, rgba(var(--primary-color-rgb), .55), rgba(var(--secondary-color-rgb), 1));
+}
 .ir-phase-grid-card__title{
   font-size: clamp(1.05rem, 0.92rem + 0.45vw, 1.45rem);
   line-height: 1.2;
