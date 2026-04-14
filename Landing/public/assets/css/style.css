@@ -11961,24 +11961,29 @@ img {
 }
 
 #section-tickets .d-ticket{
-  min-height: clamp(240px, 32vw, 340px);
-  padding: clamp(28px, 3.2vw, 44px);
+  aspect-ratio: 1.58 / 1;
+  min-height: auto;
+  padding: clamp(20px, 2.5vw, 36px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #section-tickets .d-ticket h2{
-  font-size: clamp(1.12rem, 0.6rem + 1.55vw, 1.9rem);
+  font-size: clamp(1.05rem, 0.55rem + 1.4vw, 1.75rem);
 }
 #section-tickets .d-ticket h4{
-  font-size: clamp(1.2rem, 0.95rem + 0.9vw, 1.75rem);
-  margin-bottom: 1.15rem;
+  font-size: clamp(1.1rem, 0.9rem + 0.8vw, 1.6rem);
+  margin-bottom: .75rem;
 }
 #section-tickets .d-ticket .d-ticket__copy .fs-14{
-  font-size: clamp(14px, 0.85rem + 0.35vw, 16px);
+  font-size: clamp(13px, 0.8rem + 0.3vw, 15px);
 }
 #section-tickets .d-ticket > img.mb-4:first-of-type{
-  max-width: clamp(160px, 42%, 200px);
+  max-width: clamp(140px, 35%, 180px);
+  margin-bottom: clamp(1rem, 2vw, 2rem) !important;
   height: auto !important;
 }
 
