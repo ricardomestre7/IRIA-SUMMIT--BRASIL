@@ -11944,9 +11944,19 @@ img {
 .d-ticket.s3{
   background: url('../images/misc/l5.webp');
 }
+.d-ticket__copy{
+  position: relative;
+  z-index: 1;
+  padding-right: clamp(5.25rem, 28%, 10rem);
+  max-width: 100%;
+}
 .d-ticket h2{
-  font-size: 36px;
+  font-size: clamp(1.05rem, 0.55rem + 1.35vw, 1.65rem);
+  line-height: 1.25;
   margin: 0;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 /* ================================================== */
