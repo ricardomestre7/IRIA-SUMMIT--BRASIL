@@ -7962,6 +7962,7 @@ footer .tiny-border span {
 .border-white-op-4{border: solid 1px rgba(255, 255, 255, .4);}
 .border-white-op-5{border: solid 1px rgba(255, 255, 255, .5);}
 
+.border-white-top-op-2{border-top: solid 1px rgba(255, 255, 255, .2);}
 .border-white-bottom-op-1{border-bottom: solid 1px rgba(255, 255, 255, .1);}
 .border-white-bottom-op-2{border-bottom: solid 1px rgba(255, 255, 255, .2);}
 .border-white-bottom-op-3{border-bottom: solid 1px rgba(255, 255, 255, .3);}
@@ -11980,6 +11981,11 @@ img {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
+  white-space: normal;
+}
+.ir-partners-card{
+  display: flex;
+  flex-direction: column;
   white-space: normal;
 }
 
