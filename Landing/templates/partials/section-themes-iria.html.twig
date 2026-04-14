@@ -1,3 +1,19 @@
+{% macro theme_slip(phase, index, title, description) %}
+        <div class="item">
+            <div class="d-ticket ir-themes-ticket{% if phase == 2 %} s2{% elseif phase == 3 %} s3{% endif %}">
+                <img src="assets/images/logo-iri-summit.png" class="mb-3" alt="IRIA SUMMIT PORTUGAL" width="130" height="40" style="height:40px;width:auto;max-width:130px;object-fit:contain;">
+                <img src="assets/images/misc/barcode.webp" class="w-20 p-2 abs abs-middle end-0 me-2 z-2" alt="">
+                <img src="assets/images/logo-iri-summit.png" class="abs abs-centered me-4" alt="" style="max-width:42%;max-height:88px;width:auto;height:auto;object-fit:contain;opacity:0.12;">
+                <div class="d-ticket__copy">
+                    <p class="fs-12 id-color mb-2 text-uppercase fw-bold">Tema {{ index }}</p>
+                    <h2 class="lh-1-2 mb-2 ir-themes-ticket__heading">{{ title|raw }}</h2>
+                    <p class="fs-14 op-9 mb-0 lh-1-6">{{ description|raw }}</p>
+                </div>
+            </div>
+        </div>
+{% endmacro %}
+{% import _self as themes %}
+
         <section id="section-themes" class="bg-dark section-dark text-light pt-80 pb-80 relative" aria-label="Temas em destaque por cidade">
             <div class="container">
                 <div class="row g-4 justify-content-center">
@@ -28,140 +44,32 @@
                             <ul class="d-tab-content pt-2">
                                 <li>
                                     <div class="owl-carousel owl-theme owl-iri-themes">
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--ovar h-100">
-                                                <span class="ir-theme-card__idx">01</span>
-                                                <h4 class="ir-theme-card__title">Future of Territory &amp; Intelligence Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Inteligência aplicada ao território, às comunidades e à decisão local.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--ovar h-100">
-                                                <span class="ir-theme-card__idx">02</span>
-                                                <h4 class="ir-theme-card__title">Future of Inclusion &amp; Capacitation Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Literacia, capacitação e novas oportunidades numa transição mais inclusiva.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--ovar h-100">
-                                                <span class="ir-theme-card__idx">03</span>
-                                                <h4 class="ir-theme-card__title">Future of Health &amp; Human Impact Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Saúde, prevenção, bem-estar e tecnologia ao serviço da vida real.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--ovar h-100">
-                                                <span class="ir-theme-card__idx">04</span>
-                                                <h4 class="ir-theme-card__title">Future of Education &amp; Skills Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Educação, novas competências e preparação para o futuro do trabalho.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--ovar h-100">
-                                                <span class="ir-theme-card__idx">05</span>
-                                                <h4 class="ir-theme-card__title">Future of Local Innovation Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Projetos, soluções e demonstrações com impacto no tecido económico e social.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--ovar h-100">
-                                                <span class="ir-theme-card__idx">06</span>
-                                                <h4 class="ir-theme-card__title">Future of Regeneration Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Regenerar sistemas sociais, económicos e territoriais com visão aplicada.</p>
-                                            </div>
-                                        </div>
+                                        {{ themes.theme_slip(1, '01', 'Future of Territory &amp; Intelligence Stage', 'Inteligência aplicada ao território, às comunidades e à decisão local.') }}
+                                        {{ themes.theme_slip(1, '02', 'Future of Inclusion &amp; Capacitation Stage', 'Literacia, capacitação e novas oportunidades numa transição mais inclusiva.') }}
+                                        {{ themes.theme_slip(1, '03', 'Future of Health &amp; Human Impact Stage', 'Saúde, prevenção, bem-estar e tecnologia ao serviço da vida real.') }}
+                                        {{ themes.theme_slip(1, '04', 'Future of Education &amp; Skills Stage', 'Educação, novas competências e preparação para o futuro do trabalho.') }}
+                                        {{ themes.theme_slip(1, '05', 'Future of Local Innovation Stage', 'Projetos, soluções e demonstrações com impacto no tecido económico e social.') }}
+                                        {{ themes.theme_slip(1, '06', 'Future of Regeneration Stage', 'Regenerar sistemas sociais, económicos e territoriais com visão aplicada.') }}
                                     </div>
                                 </li>
                                 <li>
                                     <div class="owl-carousel owl-theme owl-iri-themes">
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--feira h-100">
-                                                <span class="ir-theme-card__idx">01</span>
-                                                <h4 class="ir-theme-card__title">Future of Business &amp; Productivity Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Inteligência artificial, eficiência e competitividade para empresas e organizações.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--feira h-100">
-                                                <span class="ir-theme-card__idx">02</span>
-                                                <h4 class="ir-theme-card__title">Future of Industry &amp; Transformation Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Transformação produtiva, digitalização e inovação aplicada ao tecido empresarial.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--feira h-100">
-                                                <span class="ir-theme-card__idx">03</span>
-                                                <h4 class="ir-theme-card__title">Future of Talent &amp; Reskilling Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Capacitar equipas, lideranças e profissionais para novos contextos económicos.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--feira h-100">
-                                                <span class="ir-theme-card__idx">04</span>
-                                                <h4 class="ir-theme-card__title">Future of Retail &amp; Customer Experience Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Dados, automação e experiência como motores de crescimento e diferenciação.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--feira h-100">
-                                                <span class="ir-theme-card__idx">05</span>
-                                                <h4 class="ir-theme-card__title">Future of Growth &amp; Regional Ecosystems Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Parcerias, incubação, inovação e cooperação para escalar com base territorial.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--feira h-100">
-                                                <span class="ir-theme-card__idx">06</span>
-                                                <h4 class="ir-theme-card__title">Future of Finance &amp; Strategic Support Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Banca, investimento e instrumentos de apoio ao crescimento sustentável.</p>
-                                            </div>
-                                        </div>
+                                        {{ themes.theme_slip(2, '01', 'Future of Business &amp; Productivity Stage', 'Inteligência artificial, eficiência e competitividade para empresas e organizações.') }}
+                                        {{ themes.theme_slip(2, '02', 'Future of Industry &amp; Transformation Stage', 'Transformação produtiva, digitalização e inovação aplicada ao tecido empresarial.') }}
+                                        {{ themes.theme_slip(2, '03', 'Future of Talent &amp; Reskilling Stage', 'Capacitar equipas, lideranças e profissionais para novos contextos económicos.') }}
+                                        {{ themes.theme_slip(2, '04', 'Future of Retail &amp; Customer Experience Stage', 'Dados, automação e experiência como motores de crescimento e diferenciação.') }}
+                                        {{ themes.theme_slip(2, '05', 'Future of Growth &amp; Regional Ecosystems Stage', 'Parcerias, incubação, inovação e cooperação para escalar com base territorial.') }}
+                                        {{ themes.theme_slip(2, '06', 'Future of Finance &amp; Strategic Support Stage', 'Banca, investimento e instrumentos de apoio ao crescimento sustentável.') }}
                                     </div>
                                 </li>
                                 <li>
                                     <div class="owl-carousel owl-theme owl-iri-themes">
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--aveiro h-100">
-                                                <span class="ir-theme-card__idx">01</span>
-                                                <h4 class="ir-theme-card__title">Future of Science &amp; Applied Knowledge Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Ciência, investigação e transferência de conhecimento com impacto estratégico.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--aveiro h-100">
-                                                <span class="ir-theme-card__idx">02</span>
-                                                <h4 class="ir-theme-card__title">Future of Regulation &amp; Compliance Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Ética, confiança, governança e regulação para uma adoção sólida da IA.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--aveiro h-100">
-                                                <span class="ir-theme-card__idx">03</span>
-                                                <h4 class="ir-theme-card__title">Future of Telecom &amp; Intelligent Infrastructure Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Conectividade, sistemas e infraestruturas para o futuro tecnológico.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--aveiro h-100">
-                                                <span class="ir-theme-card__idx">04</span>
-                                                <h4 class="ir-theme-card__title">Future of Deep Tech &amp; Advanced Innovation Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Tecnologia avançada, plataformas emergentes e soluções de nova geração.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--aveiro h-100">
-                                                <span class="ir-theme-card__idx">05</span>
-                                                <h4 class="ir-theme-card__title">Future of Health &amp; Wellbeing Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Saúde digital, prevenção, eficiência e inovação centrada em resultados.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="ir-theme-card ir-theme-card--aveiro h-100">
-                                                <span class="ir-theme-card__idx">06</span>
-                                                <h4 class="ir-theme-card__title">Future of Europe &amp; Strategic Positioning Stage</h4>
-                                                <p class="ir-theme-card__text mb-0">Portugal como plataforma de articulação europeia entre tecnologia, território e decisão.</p>
-                                            </div>
-                                        </div>
+                                        {{ themes.theme_slip(3, '01', 'Future of Science &amp; Applied Knowledge Stage', 'Ciência, investigação e transferência de conhecimento com impacto estratégico.') }}
+                                        {{ themes.theme_slip(3, '02', 'Future of Regulation &amp; Compliance Stage', 'Ética, confiança, governança e regulação para uma adoção sólida da IA.') }}
+                                        {{ themes.theme_slip(3, '03', 'Future of Telecom &amp; Intelligent Infrastructure Stage', 'Conectividade, sistemas e infraestruturas para o futuro tecnológico.') }}
+                                        {{ themes.theme_slip(3, '04', 'Future of Deep Tech &amp; Advanced Innovation Stage', 'Tecnologia avançada, plataformas emergentes e soluções de nova geração.') }}
+                                        {{ themes.theme_slip(3, '05', 'Future of Health &amp; Wellbeing Stage', 'Saúde digital, prevenção, eficiência e inovação centrada em resultados.') }}
+                                        {{ themes.theme_slip(3, '06', 'Future of Europe &amp; Strategic Positioning Stage', 'Portugal como plataforma de articulação europeia entre tecnologia, território e decisão.') }}
                                     </div>
                                 </li>
                             </ul>
