@@ -2,40 +2,56 @@
             <div class="container">
                 <div class="row g-4 gx-5 justify-content-center">
                     <div class="col-lg-10 text-center">
-                        <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Programa Base do IRIA SUMMIT PORTUGAL</div>
-                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Estrutura Oficial da Programação</h2>
-                        <p class="lead wow fadeInUp mb-0" data-wow-delay=".3s">As três fases — <a href="#section-phase-ovar" class="text-white text-decoration-underline">Ovar</a>, <a href="#section-phase-feira" class="text-white text-decoration-underline">Santa Maria da Feira</a> e <a href="#section-phase-aveiro" class="text-white text-decoration-underline">Aveiro</a> — têm <strong class="text-white">programas oficiais de três dias</strong> nas respetivas secções. Nas abas abaixo encontra resumos orientativos com ligação ao detalhe cronológico completo.</p>
+                        <h2 class="wow fadeInUp mb-3" data-wow-delay=".1s">As 3 Fases do IRIA SUMMIT PORTUGAL</h2>
+                        <p class="lead wow fadeInUp mb-0 op-9" data-wow-delay=".2s">O ciclo 2026 estrutura-se em três etapas complementares, com identidade própria, progressão temática e programação oficial de três dias em cada cidade.</p>
                     </div>
                 </div>
-                <div class="row g-4 gx-5 justify-content-center wow fadeInUp mt-2">
-                    <div class="col-lg-12">
-                        <div class="de-tab plain">
-                            <ul class="d-tab-nav mb-4 pb-4 d-flex flex-wrap justify-content-lg-between justify-content-center gap-4">
-                                <li class="active-tab">
-                                    <h3 class="fs-20 mb-0">Ovar</h3>
-                                    <span class="fs-13 op-7">Fase 01 · O Despertar</span>
-                                </li>
-                                <li>
-                                    <h3 class="fs-20 mb-0">Santa Maria da Feira</h3>
-                                    <span class="fs-13 op-7">Fase 02 · A Expansão</span>
-                                </li>
-                                <li>
-                                    <h3 class="fs-20 mb-0">Aveiro</h3>
-                                    <span class="fs-13 op-7">Fase 03 · A Consolidação</span>
-                                </li>
-                            </ul>
-                            <ul class="d-tab-content pt-3 wow fadeInUp">
-                                <li>{% include 'partials/schedule-city-ovar.html.twig' %}</li>
-                                <li>{% include 'partials/schedule-city-feira.html.twig' %}</li>
-                                <li>{% include 'partials/schedule-city-aveiro.html.twig' %}</li>
-                            </ul>
+
+                <div class="row g-4 justify-content-center mt-2">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="w-100 bg-dark-2 rounded-1 overflow-hidden border border-white border-opacity-10 wow fadeInUp ir-phase-grid-card">
+                            <div class="position-relative ir-phase-grid-card__media">
+                                <img src="assets/images/cities/ovar.webp" class="position-absolute top-0 start-0 w-100 h-100" alt="Ovar — Fase 01 · O Despertar" style="object-fit: cover; object-position: center;">
+                            </div>
+                            <div class="p-4 ir-phase-grid-card__body">
+                                <h3 class="ir-phase-grid-card__title mb-1">Ovar</h3>
+                                <p class="fs-14 op-7 mb-3">Fase 01 · O Despertar</p>
+                                <p class="op-9 mb-4 flex-grow-1">Origem, ativação e validação inicial do ciclo.</p>
+                                <a class="btn-main btn-line fx-slide w-100 mt-auto" href="#section-phase-ovar"><span>Ver programa</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="w-100 bg-dark-2 rounded-1 overflow-hidden border border-white border-opacity-10 wow fadeInUp ir-phase-grid-card" data-wow-delay=".1s">
+                            <div class="position-relative ir-phase-grid-card__media">
+                                <img src="assets/images/cities/feira.webp" class="position-absolute top-0 start-0 w-100 h-100" alt="Santa Maria da Feira — Fase 02 · A Expansão" style="object-fit: cover; object-position: center;">
+                            </div>
+                            <div class="p-4 ir-phase-grid-card__body">
+                                <h3 class="ir-phase-grid-card__title mb-1">Santa Maria da Feira</h3>
+                                <p class="fs-14 op-7 mb-3">Fase 02 · A Expansão</p>
+                                <p class="op-9 mb-4 flex-grow-1">Escala, competitividade e ecossistema empresarial.</p>
+                                <a class="btn-main btn-line fx-slide w-100 mt-auto" href="#section-phase-feira"><span>Ver programa</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="w-100 bg-dark-2 rounded-1 overflow-hidden border border-white border-opacity-10 wow fadeInUp ir-phase-grid-card" data-wow-delay=".2s">
+                            <div class="position-relative ir-phase-grid-card__media">
+                                <img src="assets/images/cities/aveiro.webp" class="position-absolute top-0 start-0 w-100 h-100" alt="Aveiro — Fase 03 · A Consolidação" style="object-fit: cover; object-position: center;">
+                            </div>
+                            <div class="p-4 ir-phase-grid-card__body">
+                                <h3 class="ir-phase-grid-card__title mb-1">Aveiro</h3>
+                                <p class="fs-14 op-7 mb-3">Fase 03 · A Consolidação</p>
+                                <p class="op-9 mb-4 flex-grow-1">Autoridade, ciência e projeção estratégica.</p>
+                                <a class="btn-main btn-line fx-slide w-100 mt-auto" href="#section-phase-aveiro"><span>Ver programa</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="row mt-5">
                     <div class="col-lg-10 mx-auto text-center">
-                        <p class="fs-13 op-5 mb-2 wow fadeInUp">Programa base sujeito a confirmação de datas, horários e oradores, podendo sofrer ajustes pontuais.</p>
-                        <p class="fs-12 op-4 mb-0 wow fadeInUp">A estrutura programática apresentada corresponde ao desenho oficial de cada edição. As datas definitivas, horários e oradores serão confirmados oportunamente pela organização, podendo ocorrer ajustamentos de programação por razões operacionais, institucionais ou estratégicas.</p>
+                        <p class="fs-13 op-5 mb-0 wow fadeInUp">A estrutura programática de cada fase poderá ser ajustada pela organização em função de confirmações operacionais, institucionais e estratégicas.</p>
                     </div>
                 </div>
             </div>
