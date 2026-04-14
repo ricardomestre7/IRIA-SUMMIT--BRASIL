@@ -11960,6 +11960,28 @@ img {
   word-break: normal;
 }
 
+#section-tickets .d-ticket{
+  min-height: clamp(240px, 32vw, 340px);
+  padding: clamp(28px, 3.2vw, 44px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#section-tickets .d-ticket h2{
+  font-size: clamp(1.12rem, 0.6rem + 1.55vw, 1.9rem);
+}
+#section-tickets .d-ticket h4{
+  font-size: clamp(1.2rem, 0.95rem + 0.9vw, 1.75rem);
+  margin-bottom: 1.15rem;
+}
+#section-tickets .d-ticket .d-ticket__copy .fs-14{
+  font-size: clamp(14px, 0.85rem + 0.35vw, 16px);
+}
+#section-tickets .d-ticket > img.mb-4:first-of-type{
+  max-width: clamp(160px, 42%, 200px);
+  height: auto !important;
+}
+
 .ir-phase-grid-card__media{
   aspect-ratio: 4 / 3;
   background: rgba(0, 0, 0, .25);
