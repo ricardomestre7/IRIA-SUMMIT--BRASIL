@@ -13255,3 +13255,66 @@ img {
     width: auto;
   }
 }
+
+/* IRIA PREMIUM UPGRADE */
+.tracking-widest { letter-spacing: 0.25em; }
+.tracking-wide { letter-spacing: 0.1em; }
+.op-5 { opacity: 0.5; }
+.op-7 { opacity: 0.7; }
+.op-9 { opacity: 0.9; }
+
+.pt-120 { padding-top: 120px; }
+.pb-120 { padding-bottom: 120px; }
+
+#section-updates .btn-main {
+    box-shadow: 0 4px 24px rgba(var(--primary-color-rgb), 0.3);
+}
+
+footer h3 {
+    font-weight: 700 !important;
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+
+footer .social-icons a {
+    background: rgba(255,255,255,0.05);
+    width: 44px !important;
+    height: 44px !important;
+    line-height: 44px !important;
+    border-radius: 50%;
+    margin: 0 8px;
+    font-size: 18px;
+    border: 1px solid rgba(255,255,255,0.1);
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+}
+
+footer .social-icons a:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(var(--primary-color-rgb), 0.4);
+}
+
+.form-border:focus {
+    background: rgba(255,255,255,0.1) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 15px rgba(var(--primary-color-rgb), 0.2) !important;
+}
+
+/* Glassmorphism utility */
+.bg-blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.ul-check li {
+    padding-left: 30px;
+    line-height: 1.8em;
+    margin-bottom: 12px;
+}
+
+.ul-check li:before {
+    font-size: 14px;
+    top: 2px;
+}
