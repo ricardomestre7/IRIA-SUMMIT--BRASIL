@@ -19,14 +19,17 @@
 
                                 <div class="d-flex justify-content-center align-items-center mx-4">
                                     <i class="fa fa-location-pin id-color me-3"></i>
-                                    <h4 class="mb-0">1.ª fase: 18–19 jun · Ovar</h4>
+                                    <h4 class="mb-0">1.ª fase: 1–3 jun · Ovar</h4>
                                 </div>
                             </div>
 
                             <div class="spacer-single"></div>
 
                             <a class="btn-main mx-2 fx-slide" href="#section-tickets"><span>Bilhetes</span></a>
-                            <a class="btn-main btn-line mx-2 fx-slide" href="#section-schedule"><span>Programa-tipo</span></a>
+                            <a class="btn-main btn-line mx-2 fx-slide" href="#section-phase-ovar"><span>Programa Ovar</span></a>
+                            <a class="btn-main btn-line mx-2 fx-slide" href="#section-phase-feira"><span>Programa Feira</span></a>
+                            <a class="btn-main btn-line mx-2 fx-slide" href="#section-phase-aveiro"><span>Programa Aveiro</span></a>
+                            <a class="btn-main btn-line mx-2 fx-slide" href="#section-schedule"><span>Resumos</span></a>
                         </div>
                     </div>
                 </div>
@@ -74,8 +77,8 @@
 
                               <ul class="ul-check">
                                   <li class="wow fadeInUp" data-wow-delay=".8s">Ovar — origem, validação e legitimidade inicial</li>
-                                  <li class="wow fadeInUp" data-wow-delay=".9s">Santa Maria da Feira — consolidação e expansão regional</li>
-                                  <li class="wow fadeInUp" data-wow-delay="1s">Aveiro — projeção, autoridade e escala superior</li>
+                                  <li class="wow fadeInUp" data-wow-delay=".9s">Santa Maria da Feira — expansão e ecossistema empresarial</li>
+                                  <li class="wow fadeInUp" data-wow-delay="1s">Aveiro — consolidação, legado e visão estratégica</li>
                               </ul>
 
                           </div>
@@ -231,6 +234,12 @@
                 </div>
             </div>
         </section>
+
+        {% include 'partials/section-phase-ovar-iria.html.twig' %}
+
+        {% include 'partials/section-phase-feira-iria.html.twig' %}
+
+        {% include 'partials/section-phase-aveiro-iria.html.twig' %}
 
         {% include 'partials/section-schedule-iria.html.twig' %}
 
