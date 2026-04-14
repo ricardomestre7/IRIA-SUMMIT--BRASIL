@@ -1197,6 +1197,29 @@
      });
     }
 
+    function init_iri_theme_carousel($container) {
+        $container.find('.owl-iri-themes').each(function() {
+            var $carousel = $(this);
+            if ($carousel.data('owl.carousel')) {
+                $carousel.trigger('refresh.owl.carousel');
+            } else {
+                $carousel.owlCarousel({
+                    loop: true,
+                    margin: 24,
+                    nav: true,
+                    navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+                    dots: true,
+                    autoplay: false,
+                    responsive: {
+                        0: { items: 1 },
+                        768: { items: 2 },
+                        1200: { items: 3 }
+                    }
+                });
+            }
+        });
+    }
+
     function de_tabs(){
         $('.de-tab').each(function() {
             var $root = $(this),
@@ -1210,6 +1233,7 @@
              
              // Show content of active tab on loads
              $contentlis.eq(activeIndex).show();
+             init_iri_theme_carousel($contentlis.eq(activeIndex));
 
              $root.children('.d-tab-nav').on('click', 'li', function (e) {
                var $current = $(e.currentTarget),
@@ -1217,7 +1241,9 @@
                
                $tabslis.removeClass('active-tab');
                $current.addClass('active-tab');
-               $contentlis.hide().eq(index).fadeIn();
+               $contentlis.hide().eq(index).fadeIn(400, function () {
+                 init_iri_theme_carousel($(this));
+               });
                 });
         });
     }
