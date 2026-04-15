@@ -13,6 +13,9 @@ Thumbs.db
 *.swp
 *.swo
 
+# Vídeos brutos locais (MP4 servidos em Landing/public/assets/video)
+videos/
+
 # IDE
 .idea/
 .vscode/*

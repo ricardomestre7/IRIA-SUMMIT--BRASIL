@@ -1,3 +1,6 @@
+{% set edition = edition|default('brasil') %}
+
+{% if edition == 'portugal' %}
 {% set contact_lines = [
     {
         'tag': 'Coordenação institucional',
@@ -18,11 +21,35 @@
         'emails': ['parcerias@iriasummitportugal.com', 'comunicacao@iriasummitportugal.com']
     }
 ] %}
+{% set contact_domain_title = 'iriasummitportugal.com' %}
+{% else %}
+{% set contact_lines = [
+    {
+        'tag': 'Coordenação institucional',
+        'title': 'Direção e comunicação oficial',
+        'desc': 'Contactos para coordenação geral, informações institucionais e acompanhamento do ciclo no Brasil.',
+        'emails': ['comunicacao@iriasummitbrasil.com']
+    },
+    {
+        'tag': 'Exposição e startups',
+        'title': 'Expositores por cidade anfitriã',
+        'desc': 'Candidaturas de projeto, expositor ou demonstração por fase — Curitiba, Porto Alegre e Salvador.',
+        'emails': ['expositor.curitiba@iriasummitbrasil.com', 'expositor.poa@iriasummitbrasil.com', 'expositor.salvador@iriasummitbrasil.com']
+    },
+    {
+        'tag': 'Parcerias e media',
+        'title': 'Relações estratégicas e comunicação',
+        'desc': 'Patrocínios, parcerias, imprensa e comunicação oficial do OBTI SUMMIT BRASIL.',
+        'emails': ['parcerias@iriasummitbrasil.com']
+    }
+] %}
+{% set contact_domain_title = 'iriasummitbrasil.com' %}
+{% endif %}
 
 <div class="col-12 col-xl-10 mx-auto">
     <div class="text-center mb-5">
         <div class="subtitle wow fadeInUp">Contactos</div>
-        <h3 class="wow fadeInUp mb-2">Endereços oficiais @iriasummitportugal.com</h3>
+        <h3 class="wow fadeInUp mb-2">Endereços oficiais @{{ contact_domain_title }}</h3>
         <p class="op-8 mb-0 wow fadeInUp">Estrutura de contacto organizada por hierarquia funcional, com foco em expositores, parcerias e comunicação institucional.</p>
     </div>
 
