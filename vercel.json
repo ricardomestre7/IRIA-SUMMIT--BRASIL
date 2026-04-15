@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "buildCommand": "cd Landing && composer install --no-dev --no-scripts --optimize-autoloader",
-  "outputDirectory": "Landing/public",
+  "installCommand": "cd Landing && composer install --no-dev --no-scripts --optimize-autoloader",
   "functions": {
     "Landing/api/index.php": {
-      "runtime": "vercel-php@0.7.2",
+      "runtime": "vercel-php@0.6.0",
       "memory": 1024,
       "maxDuration": 30
     }
