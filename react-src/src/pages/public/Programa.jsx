@@ -3,11 +3,11 @@ import { Clock, ShieldAlert } from 'lucide-react';
 
 export default function Programa() {
   const schedule = [
-    { time: "08:00 - 09:00", title: "Credenciamento & Triagem Biométrica", desc: "Abertura dos canais operacionais e check-in com geração de IRIA-ID. Início das coletas de base Lumina.", track: "Geral" },
-    { time: "09:00 - 10:15", title: "Cerimônia de Abertura & Painel: IA Regenerativa no SUS", desc: "Abertura oficial com Ricardo Pereira e especialistas parceiros do ecossistema Cyntreon.", track: "Tecnologia" },
-    { time: "10:30 - 12:00", title: "Workshop: Protocolos Clínicos com Lumina Systems", desc: "Treinamento prático de terapeutas na utilização do sistema e sincronização com o banco de dados central.", track: "Clínico" },
-    { time: "14:00 - 15:30", title: "Painel: Rastreabilidade e Criptografia em Dados de Saúde", desc: "Discussão de boas práticas (LGPD) e segurança no processamento de sinais biológicos complexos.", track: "Segurança" },
-    { time: "16:00 - 17:30", title: "Estudo de Caso: Microdosagem e Coerência Cardíaca", desc: "Resultados estatísticos da aplicação do módulo CANNA-OS na modulação de ansiedade severa.", track: "Ciência" }
+    { time: "08:00 - 09:00", title: "Credenciamento & Triagem Biométrica", desc: "Abertura dos canais operacionais e check-in com geração de IRIA-ID. Início do monitoramento no estande Lumina.", track: "Geral" },
+    { time: "09:00 - 10:15", title: "Cerimônia de Abertura & Painel: IA Regenerativa no Evento", desc: "Abertura oficial com Ricardo Pereira e especialistas parceiros do ecossistema Cyntreon.", track: "Tecnologia" },
+    { time: "10:30 - 12:00", title: "Workshop: Protocolos de Integração Lumina Systems", desc: "Treinamento prático de desenvolvedores na utilização de sensores e sincronização de biossinais com o banco de dados central.", track: "Biofeedback" },
+    { time: "14:00 - 15:30", title: "Painel: Rastreabilidade e Criptografia em Dados Biométricos", desc: "Discussão de boas práticas (LGPD) e segurança no processamento de sinais biológicos complexos.", track: "Segurança" },
+    { time: "16:00 - 17:30", title: "Estudo de Caso: Microdosagem e Coerência Cardíaca", desc: "Resultados estatísticos da aplicação do módulo CANNA-OS no monitoramento de foco e redução de stress reativo.", track: "Ciência" }
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function Programa() {
           <ShieldAlert className="w-6 h-6 flex-shrink-0 animate-pulse" />
           <p className="text-xs font-digital">
             NOTA OPERACIONAL: A triagem de biometria Lumina funciona ininterruptamente em salas paralelas. Verifique seu IRIA-ID 
-            no app móvel para reservar vaga de exame clínico.
+            no app móvel para reservar seu horário de biofeedback.
           </p>
         </div>
       </div>
@@ -47,7 +47,7 @@ export default function Programa() {
                 <span className={`cyber-badge ${
                   item.track === 'Geral' ? 'cyber-badge-cyan' :
                   item.track === 'Tecnologia' ? 'cyber-badge-orange' :
-                  item.track === 'Clínico' ? 'cyber-badge-green' : 'cyber-badge-purple'
+                  item.track === 'Biofeedback' ? 'cyber-badge-green' : 'cyber-badge-purple'
                 }`}>
                   {item.track}
                 </span>

@@ -5,7 +5,7 @@ export default function Oradores() {
   const speakers = [
     {
       name: "Dr. Ricardo Alencar",
-      title: "Diretor da Clínica Neuro-CWB",
+      title: "Diretor do Lab Neuro-CWB",
       desc: "Especialista em neurociência integrativa, pioneiro na pesquisa de canabinoides aplicados a biofeedback cerebral.",
       city: "Ovar — Curitiba"
     },

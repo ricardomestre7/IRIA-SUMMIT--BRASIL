@@ -4,8 +4,8 @@ import { generateIriaId } from '../core/config';
 export const INITIAL_PARTICIPANTS = [
   { id: generateIriaId(12, 'CWB'), name: "Ana Beatriz Silva", email: "anabeatriz@gmail.com", city: "Ovar — Curitiba", ticket: "VIP Pass", status: "Presente", checkinTime: "2026-09-19T08:32:00Z" },
   { id: generateIriaId(85, 'CWB'), name: "Carlos Eduardo Santos", email: "carlos.santos@outlook.com", city: "Ovar — Curitiba", ticket: "General Admission", status: "Pendente", checkinTime: null },
-  { id: generateIriaId(104, 'POA'), name: "Juliana Mendes Costa", email: "juliana.costa@techhealth.io", city: "Santa Maria da Feira — Porto Alegre", ticket: "Clinical Expert", status: "Presente", checkinTime: "2026-09-20T09:15:00Z" },
-  { id: generateIriaId(183, 'CWB'), name: "Dr. Ricardo Alencar", email: "ricardo.alencar@clinicaneuro.com.br", city: "Ovar — Curitiba", ticket: "Speaker/Orador", status: "Presente", checkinTime: "2026-09-19T08:05:00Z" },
+  { id: generateIriaId(104, 'POA'), name: "Juliana Mendes Costa", email: "juliana.costa@techhealth.io", city: "Santa Maria da Feira — Porto Alegre", ticket: "Tech Specialist", status: "Presente", checkinTime: "2026-09-20T09:15:00Z" },
+  { id: generateIriaId(183, 'CWB'), name: "Dr. Ricardo Alencar", email: "ricardo.alencar@neurotech.com.br", city: "Ovar — Curitiba", ticket: "Speaker/Orador", status: "Presente", checkinTime: "2026-09-19T08:05:00Z" },
   { id: generateIriaId(214, 'SSA'), name: "Mariana Fernandes Rocha", email: "mariana.rocha@consciencia.org", city: "Aveiro — Salvador", ticket: "VIP Pass", status: "Pendente", checkinTime: null },
   { id: generateIriaId(320, 'POA'), name: "Gabriel Oliveira Lima", email: "gabriel.lima@ufrgs.br", city: "Santa Maria da Feira — Porto Alegre", ticket: "Student Pass", status: "Presente", checkinTime: "2026-09-20T10:42:00Z" },
   { id: generateIriaId(405, 'SSA'), name: "Fernanda Souza Dias", email: "fernanda.dias@salvadorhealth.com", city: "Aveiro — Salvador", ticket: "Exhibitor Pass", status: "Pendente", checkinTime: null },
@@ -13,12 +13,12 @@ export const INITIAL_PARTICIPANTS = [
 ];
 
 // 2. Lumina Systems Database
-// Lumina Clinical examinations (accompanying biometric details, diagnostics, therapist notes)
+// Lumina Biofeedback sessions (accompanying biometric details, cognitive performance, operator notes)
 export const LUMINA_EXAMS = [
   {
     iriaId: generateIriaId(183, 'CWB'),
     name: "Dr. Ricardo Alencar",
-    therapist: "Dra. Helena Viterbo (Neurofisiologista)",
+    therapist: "Helena Viterbo (Lumina Tech Lead)",
     city: "Ovar — Curitiba",
     cci: "CCI-9021-X",
     status: "Realizado",
@@ -26,7 +26,7 @@ export const LUMINA_EXAMS = [
     biometrics: {
       eegSignal: "Estável - Foco em Ritmo Alfa Frontal 10.2Hz",
       heartRateVar: "74 ms (Elevado - Boa Resiliência)",
-      cortisolLevel: "12.4 nmol/L (Normal)",
+      focusLevel: "85% (Foco Elevado)",
       galvanicSkin: "2.4 μS (Baixa Ansiedade)"
     },
     notes: "O participant demonstra excelente ativação do córtex pré-frontal esquerdo e ótimos níveis de coerência cardíaca após 15 minutos do teste de biofeedback Lumina no estande. Sinais indicativos de alta adaptabilidade de foco.",
@@ -36,7 +36,7 @@ export const LUMINA_EXAMS = [
   {
     iriaId: generateIriaId(12, 'CWB'),
     name: "Ana Beatriz Silva",
-    therapist: "Dr. Marcos Vinicius (Clínica Geral)",
+    therapist: "Marcos Vinicius (Operador Lumina)",
     city: "Ovar — Curitiba",
     cci: "CCI-1142-Y",
     status: "Realizado",
@@ -44,7 +44,7 @@ export const LUMINA_EXAMS = [
     biometrics: {
       eegSignal: "Instabilidade leve - Foco Beta Elevado 22.4Hz",
       heartRateVar: "35 ms (Moderado - Stress Detetado)",
-      cortisolLevel: "22.8 nmol/L (Elevado)",
+      focusLevel: "42% (Fadiga Cognitiva)",
       galvanicSkin: "6.8 μS (Alta Reatividade)"
     },
     notes: "Assinala-se cansaço mental leve reativo. O teste Lumina no estande evidenciou stress reativo moderado.",
@@ -54,7 +54,7 @@ export const LUMINA_EXAMS = [
   {
     iriaId: generateIriaId(104, 'POA'),
     name: "Juliana Mendes Costa",
-    therapist: "Dra. Helena Viterbo (Neurofisiologista)",
+    therapist: "Helena Viterbo (Lumina Tech Lead)",
     city: "Santa Maria da Feira — Porto Alegre",
     cci: "CCI-9021-X",
     status: "Realizado",
@@ -62,7 +62,7 @@ export const LUMINA_EXAMS = [
     biometrics: {
       eegSignal: "Excelente - Ritmo Teta Profundo 6.1Hz",
       heartRateVar: "92 ms (Excelente - Excelente Resiliência)",
-      cortisolLevel: "8.1 nmol/L (Ideal)",
+      focusLevel: "96% (Estado de Flow)",
       galvanicSkin: "1.8 μS (Estado de Meditação)"
     },
     notes: "Níveis de stress extremamente baixos. Excelente correlação entre ondas cerebrais e coerência cardíaca profunda durante a sessão no estande.",
@@ -72,7 +72,7 @@ export const LUMINA_EXAMS = [
   {
     iriaId: generateIriaId(320, 'POA'),
     name: "Gabriel Oliveira Lima",
-    therapist: "Dr. Marcos Vinicius (Clínica Geral)",
+    therapist: "Marcos Vinicius (Operador Lumina)",
     city: "Santa Maria da Feira — Porto Alegre",
     cci: "CCI-1142-Y",
     status: "Realizado",
@@ -80,7 +80,7 @@ export const LUMINA_EXAMS = [
     biometrics: {
       eegSignal: "Estável - Equilíbrio Alfa/Beta",
       heartRateVar: "54 ms (Tolerável)",
-      cortisolLevel: "15.1 nmol/L (Médio)",
+      focusLevel: "70% (Foco Estável)",
       galvanicSkin: "3.2 μS (Normal)"
     },
     notes: "Níveis biométricos normais. EEG demonstra estabilidade temporal e bom foco nas atividades interativas do evento.",
@@ -129,7 +129,7 @@ export const INITIAL_CERTIFICATES = [
     name: "Juliana Mendes Costa",
     role: "Participante Especialista",
     iriaId: generateIriaId(104, 'POA'),
-    type: "Participação Clínica",
+    type: "Participação Técnica",
     hash: null,
     issued: false,
     issuedDate: null
@@ -154,7 +154,7 @@ export const INITIAL_SYSTEM_LOGS = [
   { time: "08:05:22", type: "CHECKIN", message: "Participante (Orador) BRA-CWB-2026-000183 credenciado." },
   { time: "08:12:30", type: "LUMINA", message: "Sincronização de dados do participante BRA-CWB-2026-000183 concluída." },
   { time: "08:32:11", type: "CHECKIN", message: "Participante BRA-CWB-2026-000012 credenciado por QR-Code." },
-  { time: "08:45:00", type: "LUMINA", message: "Teste de biofeedback Lumina concluído para BRA-CWB-2026-000012 [Estande: Dr. Marcos Vinicius]." }
+  { time: "08:45:00", type: "LUMINA", message: "Teste de biofeedback Lumina concluído para BRA-CWB-2026-000012 [Operador: Marcos Vinicius]." }
 ];
 
 // 5. General Platform Metrics

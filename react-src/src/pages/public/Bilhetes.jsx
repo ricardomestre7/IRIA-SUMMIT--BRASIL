@@ -18,24 +18,24 @@ export default function Bilhetes() {
     {
       name: "VIP Pass",
       price: "R$ 950",
-      desc: "Ideal para participantes que buscam acompanhamento de saúde e análise de biometria.",
+      desc: "Ideal para participantes interessados em biofeedback, tracking cognitivo e monitoramento de performance em tempo real.",
       features: [
         "Tudo do General Admission",
-        "1 Exame Clínico Lumina Systems",
-        "Laudo em PDF na Área Interna",
+        "1 Sessão de Biofeedback Lumina Systems",
+        "Relatório em PDF na Área Interna",
         "Prioridade em filas de credenciamento",
         "Kit de boas-vindas exclusivo"
       ],
       popular: true
     },
     {
-      name: "Clinical Expert",
+      name: "Tech Specialist",
       price: "R$ 1.800",
-      desc: "Focado em médicos, terapeutas e desenvolvedores de biossinais.",
+      desc: "Focado em pesquisadores de IA, biohackers e desenvolvedores de biossinais.",
       features: [
         "Tudo do VIP Pass",
-        "Certificação especial clínica",
-        "Manual de protocolos de saúde",
+        "Certificação especial Lumina Specialist",
+        "Manual de integração de biossinais",
         "Acesso restrito ao painel de parcerias",
         "Encontro fechado com Ricardo Pereira"
       ],
@@ -48,7 +48,7 @@ export default function Bilhetes() {
       <div className="text-center mb-16">
         <h1 className="cyber-title text-4xl">Garanta seu Lugar</h1>
         <p className="text-gray-400 max-w-2xl mx-auto text-lg mt-4 font-hologram">
-          Selecione a categoria de credenciamento que melhor atende à sua demanda de aprendizado, networking e diagnóstico clínico.
+          Selecione a categoria de credenciamento que melhor atende à sua demanda de aprendizado, networking e monitoramento de performance.
         </p>
       </div>
 

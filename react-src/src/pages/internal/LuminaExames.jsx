@@ -3,7 +3,7 @@ import { LUMINA_EXAMS } from '../../data/mockData';
 import { downloadCsv } from '../../services/mockApi';
 import { 
   HeartPulse, FileText, Download, Search, X, 
-  Activity, ShieldCheck, User, Zap, Brain, Thermometer
+  Activity, ShieldCheck, User, Zap, Brain, Thermometer, Target
 } from 'lucide-react';
 
 export default function LuminaExames() {
@@ -151,7 +151,7 @@ export default function LuminaExames() {
               <div className="flex items-center gap-3">
                 <HeartPulse className="text-[#ff1744] w-6 h-6 animate-pulse" />
                 <div>
-                  <h3 className="font-header text-lg text-white font-bold">RELATÓRIO DO EXAME LUMINA</h3>
+                  <h3 className="font-header text-lg text-white font-bold">RELATÓRIO DE BIOFEEDBACK LUMINA</h3>
                   <span className="text-[10px] text-gray-500 font-digital uppercase">DADOS COLETADOS NO ESTANDE DO SUMMIT</span>
                 </div>
               </div>
@@ -195,9 +195,9 @@ export default function LuminaExames() {
                 </div>
 
                 <div className="bg-[#0a0b16] border border-white/5 rounded p-3 text-center">
-                  <Thermometer className="w-5 h-5 text-amber-500 mx-auto mb-2" />
-                  <span className="block text-[10px] text-gray-500 font-digital uppercase">Stress / Cortisol</span>
-                  <span className="text-xs text-white font-digital font-bold block mt-1">{selectedExam.biometrics.cortisolLevel}</span>
+                  <Target className="w-5 h-5 text-amber-500 mx-auto mb-2" />
+                  <span className="block text-[10px] text-gray-500 font-digital uppercase">Foco Cognitivo</span>
+                  <span className="text-xs text-white font-digital font-bold block mt-1">{selectedExam.biometrics.focusLevel}</span>
                 </div>
 
                 <div className="bg-[#0a0b16] border border-white/5 rounded p-3 text-center">

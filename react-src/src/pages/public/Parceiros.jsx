@@ -4,8 +4,8 @@ import { Handshake, Award, ShieldCheck, Database } from 'lucide-react';
 export default function Parceiros() {
   const partners = [
     { name: "Cyntreon", category: "Core Integrator / Holding", role: "Arquitetura e banco de dados corporativo principal." },
-    { name: "Lumina Systems", category: "Clinical Diagnostics Provider", role: "Sensores avançados de neurofeedback e biometria diagnóstica." },
-    { name: "BioField-Intelligence", category: "Bio-Agricultural Signals", role: "Fornecimento de dados bioecológicos e fitoterapêuticos." },
+    { name: "Lumina Systems", category: "Bio-Sensor Systems Provider", role: "Sensores avançados de neurofeedback e biometria de performance." },
+    { name: "BioField-Intelligence", category: "Bio-Agricultural Signals", role: "Fornecimento de dados bioecológicos." },
     { name: "Cylinder Margin LDA", category: "Intellectual Property / Org", role: "Detentora das patentes PPP-IA1 a PPP-IA5 e infraestrutura física." }
   ];
 
@@ -14,7 +14,7 @@ export default function Parceiros() {
       <div className="text-center mb-16">
         <h1 className="cyber-title text-4xl">Alianças & Parceiros</h1>
         <p className="text-gray-400 max-w-2xl mx-auto text-lg mt-4">
-          Unindo ciência clínica, inovação de software e patentes regenerativas para moldar a saúde do futuro.
+          Unindo neurotecnologia, inovação de software e patentes de inteligência artificial para moldar a performance do futuro.
         </p>
       </div>
 

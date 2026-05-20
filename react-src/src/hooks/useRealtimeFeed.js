@@ -4,7 +4,7 @@ import { generateIriaId } from '../core/config';
 
 const MOCK_EVENTS = [
   { type: "CHECKIN", message: "Participante BRA-CWB-2026-000512 credenciado por painel manual." },
-  { type: "LUMINA", message: "Exame clínico concluído para BRA-POA-2026-000104 [Terapeuta: Dra. Helena Viterbo]." },
+  { type: "LUMINA", message: "Sessão de biofeedback concluída para BRA-POA-2026-000104 [Operador: Helena Viterbo]." },
   { type: "CERTIFICATE", message: "Certificado de Palestrante emitido com sucesso para BRA-CWB-2026-000183." },
   { type: "SECURITY", message: "Renovando sessão encriptada com Cyntreon central API gateway." },
   { type: "API", message: "Leitura de batimento e EEG carregados para BRA-SSA-2026-000214 [CCI-9021-X]." },

@@ -3,7 +3,7 @@ import { Target, BarChart3, Database, ShieldAlert } from 'lucide-react';
 
 export default function Leads() {
   const leads = [
-    { id: "L-012", name: "Ana Beatriz Silva", origin: "Patrocinador: Lumina Booth", category: "Interesse: Tratamento Clínico" },
+    { id: "L-012", name: "Ana Beatriz Silva", origin: "Patrocinador: Lumina Booth", category: "Interesse: Monitoramento de Performance" },
     { id: "L-183", name: "Dr. Ricardo Alencar", origin: "Conferência Principal", category: "Interesse: Integração API" }
   ];
 

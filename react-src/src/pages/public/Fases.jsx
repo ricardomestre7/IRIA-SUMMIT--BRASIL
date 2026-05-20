@@ -8,7 +8,7 @@ export default function Fases() {
       city: "Ovar — Curitiba",
       date: "19–21 Setembro 2026",
       theme: "Inovação Aplicada e Laboratório Vivo",
-      desc: "Lançamento da plataforma, triagem inicial de bioimpedância e focos de inteligência de sensores aplicados à saúde.",
+      desc: "Lançamento da plataforma, triagem inicial de biofeedback e inteligência de sensores aplicada ao comportamento humano.",
       active: true
     },
     {
@@ -16,7 +16,7 @@ export default function Fases() {
       city: "Santa Maria da Feira — Porto Alegre",
       date: "Outubro 2026",
       theme: "Ciência, Mercado e Escala",
-      desc: "Expansão clínica dos exames biológicos integrados, rodadas de investimento e validação de neurotecnologias.",
+      desc: "Expansão operacional das sessões de biofeedback e neurofeedback, rodadas de investimento e validação de neurotecnologias corporativas.",
       active: false
     },
     {
@@ -24,7 +24,7 @@ export default function Fases() {
       city: "Aveiro — Salvador",
       date: "Novembro 2026",
       theme: "Consciência, Bem-Estar e Futuro Humano",
-      desc: "Sustentação clínica preventiva, foco em terapias regenerativas e consolidação final do banco de dados biológicos.",
+      desc: "Sustentação de alta performance e foco cognitivo, validação de interfaces cérebro-computador e consolidação final do banco de dados analíticos.",
       active: false
     }
   ];

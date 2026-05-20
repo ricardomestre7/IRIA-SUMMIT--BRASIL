@@ -47,8 +47,8 @@ export default function Institucional() {
             <span>Compliance e LGPD</span>
           </h3>
           <p className="text-gray-400 text-sm leading-relaxed mb-4">
-            Os dados clínicos do módulo **Lumina Systems** e a encriptação de chaves **IRIA-ID** cumprem integralmente
-            as normativas federais de proteção de dados de saúde no Brasil (LGPD).
+            Os dados biométricos do módulo **Lumina Systems** e a encriptação de chaves **IRIA-ID** cumprem integralmente
+            as normativas federais de proteção de dados sensíveis e pessoais no Brasil (LGPD).
           </p>
           <span className="cyber-badge cyber-badge-green">Consentimento Seguro</span>
         </div>
