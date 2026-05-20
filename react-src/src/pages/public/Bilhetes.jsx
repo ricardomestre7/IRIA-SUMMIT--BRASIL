@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Ticket, CheckCircle2, Shield } from 'lucide-react';
 
 export default function Bilhetes() {
@@ -50,6 +51,27 @@ export default function Bilhetes() {
         <p className="text-gray-400 max-w-2xl mx-auto text-lg mt-4 font-hologram">
           Selecione a categoria de credenciamento que melhor atende à sua demanda de aprendizado, networking e monitoramento de performance.
         </p>
+      </div>
+
+      {/* Curitiba Hub Promotion Banner */}
+      <div className="max-w-4xl mx-auto mb-12 p-6 bg-gradient-to-r from-[#101435]/80 to-[#101128]/80 border border-[#00E5FF]/20 rounded-xl flex flex-col md:flex-row justify-between items-center gap-6 shadow-[0_0_20px_rgba(0,229,255,0.05)] hover:border-[#00E5FF]/40 transition-all duration-300">
+        <div className="text-center md:text-left">
+          <span className="bg-[#00E5FF]/10 border border-[#00E5FF]/30 rounded px-2 py-0.5 text-[9px] font-digital text-[#00E5FF] uppercase tracking-wider block w-max mx-auto md:mx-0 mb-2">
+            HUB ATIVO
+          </span>
+          <h3 className="font-header text-lg text-white font-bold tracking-wide">
+            Edição Especial: Ovar — Curitiba 2026
+          </h3>
+          <p className="text-gray-400 text-xs mt-1 font-hologram">
+            Ingressos exclusivos para a etapa presencial de Curitiba. Lote Fundador com credenciais físicas e QR encriptado ativo.
+          </p>
+        </div>
+        <Link 
+          to="/bilhetes/curitiba"
+          className="cyber-btn-cyan no-underline px-6 py-2.5 text-xs font-bold uppercase tracking-wider whitespace-nowrap cursor-pointer"
+        >
+          Ver Ingressos Curitiba
+        </Link>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

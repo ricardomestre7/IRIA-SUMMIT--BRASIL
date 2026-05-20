@@ -15,6 +15,8 @@ import Institucional from './pages/public/Institucional';
 import Press from './pages/public/Press';
 import Faqs from './pages/public/Faqs';
 import Bilhetes from './pages/public/Bilhetes';
+import BilhetesCuritiba from './pages/public/BilhetesCuritiba';
+import CheckoutCuritiba from './pages/public/CheckoutCuritiba';
 import Login from './pages/public/Login';
 
 // Internal Pages
@@ -48,6 +50,8 @@ export default function App() {
           <Route path="/press" element={<Press />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/bilhetes" element={<Bilhetes />} />
+          <Route path="/bilhetes/curitiba" element={<BilhetesCuritiba />} />
+          <Route path="/checkout/curitiba" element={<CheckoutCuritiba />} />
           <Route path="/login" element={<Login />} />
         </Route>
 
