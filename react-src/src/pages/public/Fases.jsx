@@ -5,7 +5,7 @@ export default function Fases() {
   const fases = [
     {
       num: "01",
-      city: "Curitiba",
+      city: "Ovar — Curitiba",
       date: "19–21 Setembro 2026",
       theme: "Inovação Aplicada e Laboratório Vivo",
       desc: "Lançamento da plataforma, triagem inicial de bioimpedância e focos de inteligência de sensores aplicados à saúde.",
@@ -13,7 +13,7 @@ export default function Fases() {
     },
     {
       num: "02",
-      city: "Porto Alegre",
+      city: "Santa Maria da Feira — Porto Alegre",
       date: "Outubro 2026",
       theme: "Ciência, Mercado e Escala",
       desc: "Expansão clínica dos exames biológicos integrados, rodadas de investimento e validação de neurotecnologias.",
@@ -21,7 +21,7 @@ export default function Fases() {
     },
     {
       num: "03",
-      city: "Salvador",
+      city: "Aveiro — Salvador",
       date: "Novembro 2026",
       theme: "Consciência, Bem-Estar e Futuro Humano",
       desc: "Sustentação clínica preventiva, foco em terapias regenerativas e consolidação final do banco de dados biológicos.",

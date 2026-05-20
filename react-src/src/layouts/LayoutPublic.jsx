@@ -136,7 +136,7 @@ export default function LayoutPublic() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:flex sm:justify-between sm:items-center">
           <div className="flex justify-center items-center gap-3">
             <img src="/assets/images/logo-iria-modern.png" alt="Logo IRIA" className="w-8 h-8 object-contain opacity-50" />
-            <span className="text-gray-500 text-sm">© 2026 CylinderMargin LDA. Todos os direitos reservados.</span>
+            <span className="text-gray-500 text-sm">© 2026 Cylinder Margin LDA. Portugal. Ovar, Aveiro. Todos os direitos reservados.</span>
           </div>
           <div className="mt-4 sm:mt-0 flex justify-center gap-6 text-gray-500 text-xs">
             <span>Família de Patentes: PPP-IA1 a PPP-IA5</span>

@@ -121,7 +121,7 @@ export default function Certificados() {
                   <div>DATA: {new Date(selectedCert.issuedDate).toLocaleDateString('pt-BR')}</div>
                 </div>
                 <div className="text-right">
-                  <div>CylinderMargin LDA</div>
+                  <div>Cylinder Margin LDA</div>
                   <div className="text-[#00E5FF]">Cyntreon Core Verified</div>
                 </div>
               </div>

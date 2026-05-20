@@ -15,8 +15,8 @@ export default function Institucional() {
         <div className="flex gap-4 items-start mb-6">
           <ShieldCheck className="text-[#00E5FF] w-8 h-8 flex-shrink-0" />
           <div>
-            <h2 className="font-header text-xl text-white font-bold mb-1">CylinderMargin LDA</h2>
-            <p className="text-xs text-gray-500 font-digital">NIF 519207769 · PORTUGAL</p>
+            <h2 className="font-header text-xl text-white font-bold mb-1">Cylinder Margin LDA</h2>
+            <p className="text-xs text-gray-500 font-digital">NIF 519207769 · PORTUGAL · OVAR, AVEIRO</p>
           </div>
         </div>
         <p className="text-gray-400 text-sm leading-relaxed mb-6">

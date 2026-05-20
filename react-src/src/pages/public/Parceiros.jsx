@@ -6,7 +6,7 @@ export default function Parceiros() {
     { name: "Cyntreon", category: "Core Integrator / Holding", role: "Arquitetura e banco de dados corporativo principal." },
     { name: "Lumina Systems", category: "Clinical Diagnostics Provider", role: "Sensores avançados de neurofeedback e biometria diagnóstica." },
     { name: "BioField-Intelligence", category: "Bio-Agricultural Signals", role: "Fornecimento de dados bioecológicos e fitoterapêuticos." },
-    { name: "CylinderMargin LDA", category: "Intellectual Property / Org", role: "Detentora das patentes PPP-IA1 a PPP-IA5 e infraestrutura física." }
+    { name: "Cylinder Margin LDA", category: "Intellectual Property / Org", role: "Detentora das patentes PPP-IA1 a PPP-IA5 e infraestrutura física." }
   ];
 
   return (
