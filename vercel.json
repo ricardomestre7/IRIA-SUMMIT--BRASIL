@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "installCommand": "cd Landing && composer install --no-dev --no-scripts --optimize-autoloader",
+  "installCommand": "cd Landing && composer install --no-dev --no-scripts --optimize-autoloader --ignore-platform-reqs",
   "functions": {
     "Landing/api/index.php": {
       "runtime": "vercel-php@0.9.0",
