@@ -1,0 +1,28 @@
+# Symfony — aplicação em Landing/
+Landing/var/
+Landing/vendor/
+Landing/public/bundles/
+Landing/.env.local
+Landing/.env.local.php
+Landing/.env.*.local
+Landing/config/secrets/*/prod.decrypt.private.php
+
+# Ferramentas / SO
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+
+# Vídeos brutos locais (MP4 servidos em Landing/public/assets/video)
+videos/
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.vercel
+.env*.local
+
+# Node / React
+react-src/node_modules/
+react-src/dist/

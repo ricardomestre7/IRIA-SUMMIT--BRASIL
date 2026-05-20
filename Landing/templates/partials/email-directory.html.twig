@@ -1,0 +1,72 @@
+{% set edition = edition|default('brasil') %}
+
+{% if edition == 'portugal' %}
+{% set contact_lines = [
+    {
+        'tag': 'Coordenação institucional',
+        'title': 'Direção e gestão executiva',
+        'desc': 'Contactos oficiais para coordenação geral, direção de projeto e acompanhamento institucional.',
+        'emails': ['admin@iriasummitportugal.com', 'ricardorp@iriasummitportugal.com', 'susanapfcruz@iriasummitportugal.com']
+    },
+    {
+        'tag': 'Exposição e startups',
+        'title': 'Expositores por cidade anfitriã',
+        'desc': 'Canal dedicado para candidaturas de exposição, mostras regionais e participação de projetos por fase.',
+        'emails': ['expositor.ovar@iriasummitportugal.com', 'expositor.stamariadafeira@iriasummitportugal.com', 'expositor.aveiro@iriasummitportugal.com']
+    },
+    {
+        'tag': 'Parcerias e media',
+        'title': 'Relações estratégicas e comunicação',
+        'desc': 'Atendimento para patrocínios, parcerias institucionais, imprensa e comunicação oficial do summit.',
+        'emails': ['parcerias@iriasummitportugal.com', 'comunicacao@iriasummitportugal.com']
+    }
+] %}
+{% set contact_domain_title = 'iriasummitportugal.com' %}
+{% else %}
+{% set contact_lines = [
+    {
+        'tag': 'Coordenação institucional',
+        'title': 'Direção e comunicação oficial',
+        'desc': 'Contactos para coordenação geral, informações institucionais e acompanhamento do ciclo no Brasil.',
+        'emails': ['comunicacao@iriasummitbrasil.com']
+    },
+    {
+        'tag': 'Exposição e startups',
+        'title': 'Expositores por cidade anfitriã',
+        'desc': 'Candidaturas de projeto, expositor ou demonstração por fase — Curitiba, Porto Alegre e Salvador.',
+        'emails': ['expositor.curitiba@iriasummitbrasil.com', 'expositor.poa@iriasummitbrasil.com', 'expositor.salvador@iriasummitbrasil.com']
+    },
+    {
+        'tag': 'Parcerias e media',
+        'title': 'Relações estratégicas e comunicação',
+        'desc': 'Patrocínios, parcerias, imprensa e comunicação oficial do OBTI SUMMIT BRASIL.',
+        'emails': ['parcerias@iriasummitbrasil.com']
+    }
+] %}
+{% set contact_domain_title = 'iriasummitbrasil.com' %}
+{% endif %}
+
+<div class="col-12 col-xl-10 mx-auto">
+    <div class="text-center mb-5">
+        <div class="subtitle wow fadeInUp">Contactos</div>
+        <h3 class="wow fadeInUp mb-2">Endereços oficiais @{{ contact_domain_title }}</h3>
+        <p class="op-8 mb-0 wow fadeInUp">Estrutura de contacto organizada por hierarquia funcional, com foco em expositores, parcerias e comunicação institucional.</p>
+    </div>
+
+    <div class="rounded-1 border-white-op-2 p-4 p-lg-5 bg-dark-2 wow fadeInUp" data-wow-delay=".1s">
+        {% for line in contact_lines %}
+        <div class="{% if not loop.first %}pt-4 mt-4{% endif %}"{% if not loop.first %} style="border-top:1px dashed rgba(255,255,255,.25);" {% endif %}>
+            <div class="text-center text-lg-start mb-3">
+                <span class="subtitle s2 d-inline-block mb-2">{{ line.tag }}</span>
+                <h4 class="mb-2">{{ line.title }}</h4>
+                <p class="op-8 mb-0">{{ line.desc }}</p>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                {% for email in line.emails %}
+                <a href="mailto:{{ email }}" class="px-3 py-2 rounded-1 border-white-op-2 text-light fw-bold">{{ email }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

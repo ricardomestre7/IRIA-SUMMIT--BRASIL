@@ -1,0 +1,80 @@
+{% macro theme_slip(phase, index, title, description) %}
+        <div class="item">
+            <div class="d-ticket ir-themes-ticket{% if phase == 2 %} s2{% elseif phase == 3 %} s3{% endif %}">
+                <img src="assets/images/logo-iri-summit.png" class="mb-3" alt="IRIA SUMMIT PORTUGAL" width="130" height="40" style="height:40px;width:auto;max-width:130px;object-fit:contain;">
+                <img src="assets/images/misc/barcode.webp" class="w-20 p-2 abs abs-middle end-0 me-2 z-2" alt="">
+                <img src="assets/images/logo-iri-summit.png" class="abs abs-centered me-4" alt="" style="max-width:42%;max-height:88px;width:auto;height:auto;object-fit:contain;opacity:0.12;">
+                <div class="d-ticket__copy">
+                    <p class="fs-12 id-color mb-2 text-uppercase fw-bold">Tema {{ index }}</p>
+                    <h2 class="lh-1-2 mb-2 ir-themes-ticket__heading">{{ title|raw }}</h2>
+                    <p class="fs-14 op-9 mb-0 lh-1-6">{{ description|raw }}</p>
+                </div>
+            </div>
+        </div>
+{% endmacro %}
+{% import _self as themes %}
+
+        <section id="section-themes" class="bg-dark section-dark text-light pt-80 pb-80 relative" aria-label="Temas em destaque por cidade">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Curadoria temática</div>
+                        <h2 class="wow fadeInUp mb-3" data-wow-delay=".1s">Temas em destaque por cidade</h2>
+                        <p class="lead wow fadeInUp mb-0 op-9" data-wow-delay=".2s">Cada fase do IRIA SUMMIT PORTUGAL desenvolve uma curadoria temática própria, alinhada com o papel estratégico de Ovar, Santa Maria da Feira e Aveiro no ciclo 2026.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 justify-content-center mt-2">
+                    <div class="col-lg-12">
+                        <div class="de-tab plain ir-themes-de-tab">
+                            <ul class="d-tab-nav mb-4 pb-4 d-flex flex-wrap justify-content-lg-between justify-content-center gap-4">
+                                <li class="active-tab">
+                                    <h3 class="fs-20 mb-0">Ovar</h3>
+                                    <span class="fs-13 op-7">Fase 01 · O Despertar</span>
+                                </li>
+                                <li>
+                                    <h3 class="fs-20 mb-0">Santa Maria da Feira</h3>
+                                    <span class="fs-13 op-7">Fase 02 · A Expansão</span>
+                                </li>
+                                <li>
+                                    <h3 class="fs-20 mb-0">Aveiro</h3>
+                                    <span class="fs-13 op-7">Fase 03 · A Consolidação</span>
+                                </li>
+                            </ul>
+                            <ul class="d-tab-content pt-2">
+                                <li>
+                                    <div class="owl-carousel owl-theme owl-iri-themes">
+                                        {{ themes.theme_slip(1, '01', 'Future of Territory &amp; Intelligence Stage', 'Inteligência aplicada ao território, às comunidades e à decisão local.') }}
+                                        {{ themes.theme_slip(1, '02', 'Future of Inclusion &amp; Capacitation Stage', 'Literacia, capacitação e novas oportunidades numa transição mais inclusiva.') }}
+                                        {{ themes.theme_slip(1, '03', 'Future of Health &amp; Human Impact Stage', 'Saúde, prevenção, bem-estar e tecnologia ao serviço da vida real.') }}
+                                        {{ themes.theme_slip(1, '04', 'Future of Education &amp; Skills Stage', 'Educação, novas competências e preparação para o futuro do trabalho.') }}
+                                        {{ themes.theme_slip(1, '05', 'Future of Local Innovation Stage', 'Projetos, soluções e demonstrações com impacto no tecido económico e social.') }}
+                                        {{ themes.theme_slip(1, '06', 'Future of Regeneration Stage', 'Regenerar sistemas sociais, económicos e territoriais com visão aplicada.') }}
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="owl-carousel owl-theme owl-iri-themes">
+                                        {{ themes.theme_slip(2, '01', 'Future of Business &amp; Productivity Stage', 'Inteligência artificial, eficiência e competitividade para empresas e organizações.') }}
+                                        {{ themes.theme_slip(2, '02', 'Future of Industry &amp; Transformation Stage', 'Transformação produtiva, digitalização e inovação aplicada ao tecido empresarial.') }}
+                                        {{ themes.theme_slip(2, '03', 'Future of Talent &amp; Reskilling Stage', 'Capacitar equipas, lideranças e profissionais para novos contextos económicos.') }}
+                                        {{ themes.theme_slip(2, '04', 'Future of Retail &amp; Customer Experience Stage', 'Dados, automação e experiência como motores de crescimento e diferenciação.') }}
+                                        {{ themes.theme_slip(2, '05', 'Future of Growth &amp; Regional Ecosystems Stage', 'Parcerias, incubação, inovação e cooperação para escalar com base territorial.') }}
+                                        {{ themes.theme_slip(2, '06', 'Future of Finance &amp; Strategic Support Stage', 'Banca, investimento e instrumentos de apoio ao crescimento sustentável.') }}
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="owl-carousel owl-theme owl-iri-themes">
+                                        {{ themes.theme_slip(3, '01', 'Future of Science &amp; Applied Knowledge Stage', 'Ciência, investigação e transferência de conhecimento com impacto estratégico.') }}
+                                        {{ themes.theme_slip(3, '02', 'Future of Regulation &amp; Compliance Stage', 'Ética, confiança, governança e regulação para uma adoção sólida da IA.') }}
+                                        {{ themes.theme_slip(3, '03', 'Future of Telecom &amp; Intelligent Infrastructure Stage', 'Conectividade, sistemas e infraestruturas para o futuro tecnológico.') }}
+                                        {{ themes.theme_slip(3, '04', 'Future of Deep Tech &amp; Advanced Innovation Stage', 'Tecnologia avançada, plataformas emergentes e soluções de nova geração.') }}
+                                        {{ themes.theme_slip(3, '05', 'Future of Health &amp; Wellbeing Stage', 'Saúde digital, prevenção, eficiência e inovação centrada em resultados.') }}
+                                        {{ themes.theme_slip(3, '06', 'Future of Europe &amp; Strategic Positioning Stage', 'Portugal como plataforma de articulação europeia entre tecnologia, território e decisão.') }}
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

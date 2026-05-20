@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "installCommand": "cd Landing && composer install --no-dev --no-scripts --optimize-autoloader",
+  "functions": {
+    "Landing/api/index.php": {
+      "runtime": "vercel-php@0.9.0",
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  },
+  "routes": [
+    { "src": "/assets/(.*)", "dest": "/Landing/public/assets/$1" },
+    { "src": "/(.*\\.(css|js|mjs|webp|png|jpg|jpeg|svg|gif|ico|woff2?|ttf|eot|map|mp4|webm))$", "dest": "/Landing/public/$1" },
+    { "src": "/(.*)", "dest": "/Landing/api/index.php" }
+  ]
+}
+

@@ -1,0 +1,21 @@
+Deploy IRIA (Symfony) na Vercel — check-list
+============================================
+
+1) Raiz do projeto na Vercel
+   Em Project → Settings → General → "Root Directory", defina:  Landing
+
+2) Variáveis de ambiente (Settings → Environment Variables)
+   APP_ENV=prod
+   APP_DEBUG=0
+   APP_SECRET=<obrigatório: string longa aleatória, mín. 32 caracteres>
+
+3) Redeploy
+   Deployments → último deploy → Redeploy.
+
+4) Runtime PHP
+   Este repositório usa o runtime comunitário "vercel-php" (vercel.json).
+   Se o build falhar, confira os logs de "Build" e de "Functions".
+
+5) Caminhos de assets
+   As páginas devem ser abertas na raiz do domínio (/) para os links
+   relativos "assets/..." funcionarem. Se usar subpath, use URL canónica na raiz.
