@@ -57,7 +57,7 @@ export default function Dashboard() {
       <div className="flex justify-between items-center">
         <div>
           <h1 className="cyber-title text-2xl mb-1">Centro Operacional Geral</h1>
-          <p className="text-xs text-gray-500 font-digital uppercase tracking-widest">IRIA PLATFORM NODE STATS // CURITIBA HUB v2.6</p>
+          <p className="text-xs text-gray-500 font-digital uppercase tracking-widest">IRIA PLATFORM NODE STATS // OVAR — CURITIBA HUB v2.6</p>
         </div>
         <div className="flex gap-3">
           <button className="cyber-btn-cyan flex items-center gap-1.5 py-1.5 text-xs">
@@ -160,7 +160,7 @@ export default function Dashboard() {
           <div className="mt-6 bg-[#ff9100]/5 border border-[#ff9100]/20 rounded p-3 flex gap-3 items-start">
             <AlertCircle className="text-[#ff9100] w-4 h-4 flex-shrink-0 mt-0.5" />
             <p className="text-[11px] text-gray-400 leading-relaxed">
-              AVISO: Lote de credenciamento do sub-hub POA sincronizado há 12 minutos.
+              AVISO: Lote de credenciamento do sub-hub FEIRA — POA sincronizado há 12 minutos.
             </p>
           </div>
         </div>

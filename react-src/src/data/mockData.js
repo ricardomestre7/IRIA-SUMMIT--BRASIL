@@ -2,14 +2,14 @@ import { generateIriaId } from '../core/config';
 
 // 1. Initial Participants list
 export const INITIAL_PARTICIPANTS = [
-  { id: generateIriaId(12, 'CWB'), name: "Ana Beatriz Silva", email: "anabeatriz@gmail.com", city: "Curitiba", ticket: "VIP Pass", status: "Presente", checkinTime: "2026-09-19T08:32:00Z" },
-  { id: generateIriaId(85, 'CWB'), name: "Carlos Eduardo Santos", email: "carlos.santos@outlook.com", city: "Curitiba", ticket: "General Admission", status: "Pendente", checkinTime: null },
-  { id: generateIriaId(104, 'POA'), name: "Juliana Mendes Costa", email: "juliana.costa@techhealth.io", city: "Porto Alegre", ticket: "Clinical Expert", status: "Presente", checkinTime: "2026-09-20T09:15:00Z" },
-  { id: generateIriaId(183, 'CWB'), name: "Dr. Ricardo Alencar", email: "ricardo.alencar@clinicaneuro.com.br", city: "Curitiba", ticket: "Speaker/Orador", status: "Presente", checkinTime: "2026-09-19T08:05:00Z" },
-  { id: generateIriaId(214, 'SSA'), name: "Mariana Fernandes Rocha", email: "mariana.rocha@consciencia.org", city: "Salvador", ticket: "VIP Pass", status: "Pendente", checkinTime: null },
-  { id: generateIriaId(320, 'POA'), name: "Gabriel Oliveira Lima", email: "gabriel.lima@ufrgs.br", city: "Porto Alegre", ticket: "Student Pass", status: "Presente", checkinTime: "2026-09-20T10:42:00Z" },
-  { id: generateIriaId(405, 'SSA'), name: "Fernanda Souza Dias", email: "fernanda.dias@salvadorhealth.com", city: "Salvador", ticket: "Exhibitor Pass", status: "Pendente", checkinTime: null },
-  { id: generateIriaId(512, 'CWB'), name: "Roberto Ramos Cruz", email: "roberto.ramos@gmail.com", city: "Curitiba", ticket: "General Admission", status: "Presente", checkinTime: "2026-09-19T09:12:00Z" }
+  { id: generateIriaId(12, 'CWB'), name: "Ana Beatriz Silva", email: "anabeatriz@gmail.com", city: "Ovar — Curitiba", ticket: "VIP Pass", status: "Presente", checkinTime: "2026-09-19T08:32:00Z" },
+  { id: generateIriaId(85, 'CWB'), name: "Carlos Eduardo Santos", email: "carlos.santos@outlook.com", city: "Ovar — Curitiba", ticket: "General Admission", status: "Pendente", checkinTime: null },
+  { id: generateIriaId(104, 'POA'), name: "Juliana Mendes Costa", email: "juliana.costa@techhealth.io", city: "Santa Maria da Feira — Porto Alegre", ticket: "Clinical Expert", status: "Presente", checkinTime: "2026-09-20T09:15:00Z" },
+  { id: generateIriaId(183, 'CWB'), name: "Dr. Ricardo Alencar", email: "ricardo.alencar@clinicaneuro.com.br", city: "Ovar — Curitiba", ticket: "Speaker/Orador", status: "Presente", checkinTime: "2026-09-19T08:05:00Z" },
+  { id: generateIriaId(214, 'SSA'), name: "Mariana Fernandes Rocha", email: "mariana.rocha@consciencia.org", city: "Aveiro — Salvador", ticket: "VIP Pass", status: "Pendente", checkinTime: null },
+  { id: generateIriaId(320, 'POA'), name: "Gabriel Oliveira Lima", email: "gabriel.lima@ufrgs.br", city: "Santa Maria da Feira — Porto Alegre", ticket: "Student Pass", status: "Presente", checkinTime: "2026-09-20T10:42:00Z" },
+  { id: generateIriaId(405, 'SSA'), name: "Fernanda Souza Dias", email: "fernanda.dias@salvadorhealth.com", city: "Aveiro — Salvador", ticket: "Exhibitor Pass", status: "Pendente", checkinTime: null },
+  { id: generateIriaId(512, 'CWB'), name: "Roberto Ramos Cruz", email: "roberto.ramos@gmail.com", city: "Ovar — Curitiba", ticket: "General Admission", status: "Presente", checkinTime: "2026-09-19T09:12:00Z" }
 ];
 
 // 2. Lumina Systems Database
@@ -19,7 +19,7 @@ export const LUMINA_EXAMS = [
     iriaId: generateIriaId(183, 'CWB'),
     name: "Dr. Ricardo Alencar",
     therapist: "Dra. Helena Viterbo (Neurofisiologista)",
-    city: "Curitiba",
+    city: "Ovar — Curitiba",
     cci: "CCI-9021-X",
     status: "Realizado",
     date: "2026-09-19",
@@ -29,7 +29,7 @@ export const LUMINA_EXAMS = [
       cortisolLevel: "12.4 nmol/L (Normal)",
       galvanicSkin: "2.4 μS (Baixa Ansiedade)"
     },
-    notes: "O participante demonstra excelente ativação do córtex pré-frontal esquerdo e ótimos níveis de coerência cardíaca após 15 minutos do teste de biofeedback Lumina no estande. Sinais indicativos de alta adaptabilidade de foco.",
+    notes: "O participant demonstra excelente ativação do córtex pré-frontal esquerdo e ótimos níveis de coerência cardíaca após 15 minutos do teste de biofeedback Lumina no estande. Sinais indicativos de alta adaptabilidade de foco.",
     recommendations: "Recomendado acompanhamento de meditação e coerência respiratória durante os painéis do evento.",
     pdfUrl: "/react-build/pdfs/LUMINA-CWB-2026-000183.pdf"
   },
@@ -37,7 +37,7 @@ export const LUMINA_EXAMS = [
     iriaId: generateIriaId(12, 'CWB'),
     name: "Ana Beatriz Silva",
     therapist: "Dr. Marcos Vinicius (Clínica Geral)",
-    city: "Curitiba",
+    city: "Ovar — Curitiba",
     cci: "CCI-1142-Y",
     status: "Realizado",
     date: "2026-09-19",
@@ -55,7 +55,7 @@ export const LUMINA_EXAMS = [
     iriaId: generateIriaId(104, 'POA'),
     name: "Juliana Mendes Costa",
     therapist: "Dra. Helena Viterbo (Neurofisiologista)",
-    city: "Porto Alegre",
+    city: "Santa Maria da Feira — Porto Alegre",
     cci: "CCI-9021-X",
     status: "Realizado",
     date: "2026-09-20",
@@ -73,7 +73,7 @@ export const LUMINA_EXAMS = [
     iriaId: generateIriaId(320, 'POA'),
     name: "Gabriel Oliveira Lima",
     therapist: "Dr. Marcos Vinicius (Clínica Geral)",
-    city: "Porto Alegre",
+    city: "Santa Maria da Feira — Porto Alegre",
     cci: "CCI-1142-Y",
     status: "Realizado",
     date: "2026-09-20",
@@ -91,7 +91,7 @@ export const LUMINA_EXAMS = [
     iriaId: generateIriaId(85, 'CWB'),
     name: "Carlos Eduardo Santos",
     therapist: "Pendente de Alocação",
-    city: "Curitiba",
+    city: "Ovar — Curitiba",
     cci: "N/A",
     status: "Pendente",
     date: "2026-09-19",
@@ -148,7 +148,7 @@ export const INITIAL_CERTIFICATES = [
 
 // 4. Initial System Logs (Live feed simulation)
 export const INITIAL_SYSTEM_LOGS = [
-  { time: "07:10:14", type: "SYSTEM", message: "IRIA CORE Node Curitiba (CWB-01) inicializado com sucesso." },
+  { time: "07:10:14", type: "SYSTEM", message: "IRIA CORE Node Ovar — Curitiba (CWB-01) inicializado com sucesso." },
   { time: "07:11:02", type: "SECURITY", message: "Conexão encriptada estabelecida com ecossistema Cyntreon Core." },
   { time: "07:15:45", type: "API", message: "Conexão estabelecida com servidor de dados Lumina local." },
   { time: "08:05:22", type: "CHECKIN", message: "Participante (Orador) BRA-CWB-2026-000183 credenciado." },

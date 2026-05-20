@@ -64,12 +64,12 @@ export default function LuminaExames() {
             value={cityFilter} 
             onChange={e => setCityFilter(e.target.value)}
             className="cyber-input" 
-            style={{ width: '150px' }}
+            style={{ width: '220px' }}
           >
             <option value="ALL">Todas as Cidades</option>
-            <option value="Curitiba">Curitiba</option>
-            <option value="Porto Alegre">Porto Alegre</option>
-            <option value="Salvador">Salvador</option>
+            <option value="Ovar — Curitiba">Ovar — Curitiba</option>
+            <option value="Santa Maria da Feira — Porto Alegre">Feira — Porto Alegre</option>
+            <option value="Aveiro — Salvador">Aveiro — Salvador</option>
           </select>
           <select 
             value={statusFilter} 
@@ -196,7 +196,7 @@ export default function LuminaExames() {
 
                 <div className="bg-[#0a0b16] border border-white/5 rounded p-3 text-center">
                   <Thermometer className="w-5 h-5 text-amber-500 mx-auto mb-2" />
-                  <span className="block text-[10px] text-gray-500 font-digital uppercase">Nível de Foco</span>
+                  <span className="block text-[10px] text-gray-500 font-digital uppercase">Stress / Cortisol</span>
                   <span className="text-xs text-white font-digital font-bold block mt-1">{selectedExam.biometrics.cortisolLevel}</span>
                 </div>
 

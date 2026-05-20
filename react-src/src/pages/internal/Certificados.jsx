@@ -113,7 +113,7 @@ export default function Certificados() {
               <div className="text-[10px] text-gray-500 font-digital uppercase mb-3">IRIA SUMMIT BRASIL 2026</div>
               <p className="text-xs text-gray-300 leading-relaxed mb-4">
                 Certificamos que <strong className="text-white">{selectedCert.name}</strong> participou com aproveitamento na categoria
-                de <strong className="text-white">{selectedCert.type}</strong> durante as atividades oficiais do ciclo Curitiba 2026.
+                de <strong className="text-white">{selectedCert.type}</strong> durante as atividades oficiais do ciclo {selectedCert.iriaId.includes('POA') ? 'Santa Maria da Feira — Porto Alegre' : selectedCert.iriaId.includes('SSA') ? 'Aveiro — Salvador' : 'Ovar — Curitiba'} 2026.
               </p>
               <div className="flex justify-between items-end border-t border-white/5 pt-4 text-[9px] font-digital text-gray-500">
                 <div>

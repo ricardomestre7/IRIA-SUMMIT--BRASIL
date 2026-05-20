@@ -46,12 +46,12 @@ export default function Participantes() {
             value={cityFilter} 
             onChange={e => setCityFilter(e.target.value)}
             className="cyber-input" 
-            style={{ width: '150px' }}
+            style={{ width: '220px' }}
           >
             <option value="ALL">Todas as Cidades</option>
-            <option value="Curitiba">Curitiba</option>
-            <option value="Porto Alegre">Porto Alegre</option>
-            <option value="Salvador">Salvador</option>
+            <option value="Ovar — Curitiba">Ovar — Curitiba</option>
+            <option value="Santa Maria da Feira — Porto Alegre">Feira — Porto Alegre</option>
+            <option value="Aveiro — Salvador">Aveiro — Salvador</option>
           </select>
           <select 
             value={statusFilter} 

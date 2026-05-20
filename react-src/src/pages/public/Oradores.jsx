@@ -7,19 +7,19 @@ export default function Oradores() {
       name: "Dr. Ricardo Alencar",
       title: "Diretor da Clínica Neuro-CWB",
       desc: "Especialista em neurociência integrativa, pioneiro na pesquisa de canabinoides aplicados a biofeedback cerebral.",
-      city: "Curitiba"
+      city: "Ovar — Curitiba"
     },
     {
       name: "Dra. Helena Viterbo",
       title: "Diretora de Pesquisa Lumina Systems",
       desc: "Ph.D. em Biofísica Médica, desenvolvedora chefe dos algoritmos de coerência neural integrados nos sensores biométricos.",
-      city: "Porto Alegre"
+      city: "Santa Maria da Feira — Porto Alegre"
     },
     {
       name: "Prof. Alberto Santos",
       title: "Coordenador de IA - Cyntreon Labs",
       desc: "Investigador especializado em modelagem computacional biológica e arquitetura de redes neurais regenerativas.",
-      city: "Salvador"
+      city: "Aveiro — Salvador"
     }
   ];
 

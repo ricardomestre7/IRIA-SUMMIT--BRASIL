@@ -3,7 +3,7 @@ import { Calendar, Clock, MapPin, Plus } from 'lucide-react';
 
 export default function Agenda() {
   const events = [
-    { id: "EV-01", time: "09:00", title: "Triagem Biométrica Curitiba", room: "Sala Lumina A", cap: "12/20 pax", instructor: "Dra. Helena Viterbo" },
+    { id: "EV-01", time: "09:00", title: "Triagem Biométrica Ovar — Curitiba", room: "Sala Lumina A", cap: "12/20 pax", instructor: "Dra. Helena Viterbo" },
     { id: "EV-02", time: "10:30", title: "Configuração do CANNA-OS v3", room: "Lab Computacional 1", cap: "15/15 pax", instructor: "Dr. Ricardo Alencar" },
     { id: "EV-03", time: "14:00", title: "Mapeamento Biossocial", room: "Auditório Central", cap: "85/120 pax", instructor: "Alberto Santos" }
   ];
