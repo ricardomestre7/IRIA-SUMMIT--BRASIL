@@ -9,6 +9,11 @@ class Kernel extends BaseKernel
 {
     use MicroKernelTrait;
 
+    public function getProjectDir(): string
+    {
+        return dirname(__DIR__);
+    }
+
     public function getCacheDir(): string
     {
         if ($this->isVercelRuntime()) {
